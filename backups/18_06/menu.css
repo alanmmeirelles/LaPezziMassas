@@ -1,0 +1,220 @@
+@charset "UTF-8";
+/* --------------- RESET e Toda a pagina ---------------*/
+@font-face {
+  font-family:'painter';
+  src: url(../_fonts/painter.ttf);
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    border: none;
+    outline: none;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+
+  }
+a{
+  text-decoration: none;
+}
+ul {
+  list-style: none;
+}
+
+/* --------------- Inicio Mobile First ------------------------*/
+
+/* --Inicio do menu de  navegação -----------------------------------------------*/
+nav div.c_Barra_menu_mobile{
+  width: 100vw;
+  height: 8.4vh;
+  background-image: linear-gradient(-45deg,#f0ba3c,#ffe7b2,#fccf65);
+  align-items:center;
+  display: flex;
+  flex-direction: row;
+  justify-content:center;
+}
+nav div img.icone_m{
+  width: 1.8em;
+  display: flex;
+  margin-right: 3vw;
+  z-index: 1;
+}
+nav h1{
+  display: flex;
+  color:#09895c;
+  font-family: painter, Cursive;
+  font-size: 1.4em;
+  z-index: 1;
+  font-weight:normal;
+  background-color: inherit;
+}
+ul#Menu_abre_fecha {
+  position: absolute;
+  z-index: 1;
+  display: none;
+  width: 100vw;
+}
+ul#Menu_abre_fecha li a{
+  width: 100vw;
+  height: 12vh;
+  align-items: center;
+  display: flex;
+  color: white;
+  text-align: left;
+  font-weight: 800;
+  font-size: 1em;
+  background-color: rgb(42, 42, 42);
+}
+div.C_icon_menu{
+  background-color: rgb(42, 42, 42);
+  color: inherit;
+  width: 22vw;
+  height: 12vh;
+  left: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-right: 5vw;
+  border-bottom: 1px solid orange;
+}
+.C_icon_menu img{
+  width: 8vw;
+  height: auto;
+}
+
+/* --Inicio sessão como pedir -----------------------------------------------*/
+
+img.banner{
+  width: 100vw;
+  height:100%;
+  position: relative;
+}
+
+div.grupo_cha{
+  position: relative;
+  overflow-x: hidden;
+  width: 100vw;
+  height: 15rem;
+  top: -1vh;
+}
+
+  div.fundo_l{
+    background-color:  #FF9900;
+    color: inherit;
+    width: 105vw;
+    height: 13.94rem;
+    position: absolute;
+    transform:rotate(-4deg);
+    z-index: -1;
+    top: -0.8vh;
+    left: -4vw;
+  }
+  div.fundo_c{
+    background-color: #222;
+    color: inherit;
+    width: 110vw;
+    height: 13.94rem;
+    position: absolute;
+    left: -3vw;
+    top:-2vh;
+    transform:rotate(-3deg);
+  }
+  h1.chamada{
+    padding: 0 1.875rem 0 1.875rem ;
+    position: absolute;
+    top: 6vh;
+    color: #fff;
+    background-color: inherit;
+    font: 400 1.30rem/2.063rem 'painter',cursive;
+}
+span{
+  color: #FF9900;
+  background-color: inherit;
+  font: 1.30rem 'painter',cursive;
+}
+div.como_pedir{
+  padding: 1rem 1.875rem 0 1.875rem ;
+  display: flex;
+  flex-direction: row;
+}
+h2.chamada_2{
+  width: 14.44rem;
+  color: #66CC99;
+  font: 800 1.65rem/2.375rem 'open sans', sans-serif ;
+  display: flex;
+  background-color: inherit;
+}
+img.icone_click{
+  width: 4rem;
+  height: 100%;
+  display: flex;
+  padding: 0.8rem 0 0 0.3rem;
+}
+ol.passo_a_p{
+  margin: 1.2rem 1.875rem 3rem 3rem ;
+
+  font: 400 1rem/1.75rem 'open sans', sans-serif ;
+  color: #999;
+}
+
+/* --Inicio sessão produtos -----------------------------------------------*/
+
+section.C_produtos{
+}
+
+img.foto_produto{
+  width: 100vw;
+  height: 100%;
+}
+
+
+
+
+
+
+
+
+
+
+/* --Inicio Footer --------------------------------------*/
+footer{
+  background-color: #111;
+  color:inherit;
+  width: 100vw;
+  height: 54vh;
+  position: relative;
+
+}
+footer p{
+  color: #fff;
+  background-color: inherit;
+  font-weight: bold;
+  padding: 1vh 1.875rem 0 1.875rem ;
+}
+footer img{
+  width: 10rem;
+  height: auto;
+  padding: 1.4rem 1.875rem 0 1.875rem ;
+}
+footer ul li a{
+  color: #ff9900;
+  background-color: inherit;
+  padding: 0 1.875rem 0 1.875rem ;
+  font-size: 0.9em;
+  line-height: 1.8em;
+}
+footer address{
+  background-color: #333;
+  color: #999;
+  padding: 0 1.875rem 0 1.875rem ;
+  text-align: center;
+  font-size: 0.8em;
+  height: 10vh;
+  width: 100vw;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  margin-top: 5vh;
+}

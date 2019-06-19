@@ -1,0 +1,758 @@
+@charset "UTF-8";
+/* --------------- RESET e Toda a pagina ---------------*/
+
+@font-face {
+  font-family:'painter';
+  src: url(../_fonts/painter.ttf);
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    border: none;
+    outline: none;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 16px;
+  }
+
+a{
+  text-decoration: none;
+}
+
+ul {
+  list-style: none;
+}
+
+
+/* --------------- Inicio Mobile First ------------------------*/
+
+/* --Inicio Menu -----------------------------------------------*/
+nav div.c_Barra_menu_mobile{
+    width: 100vw;
+    height: 8.4vh;
+    background-image: linear-gradient(-45deg,#f0ba3c,#ffe7b2,#fccf65);
+    align-items:center;
+    display: flex;
+    flex-direction: row;
+    justify-content:center;
+}
+
+        nav div img.icone_m{
+          width: 1.8em;
+          display: flex;
+          margin-right: 3vw;
+          z-index: 1;
+        }
+
+        nav h1{
+          display: flex;
+          color:#09895c;
+          font-family: painter, Cursive;
+          font-size: 1.4em;
+          z-index: 1;
+          font-weight:normal;
+          background-color: inherit;
+        }
+
+        ul#Menu_abre_fecha {
+          position: absolute;
+          z-index: 1;
+          display: none;
+          width: 100vw;
+          background-color:#ffffff;
+          }
+
+          ul#Menu_abre_fecha li a{
+            width: 100vw;
+            height: 12vh;
+            align-items: center;
+            display: flex;
+            color: white;
+            text-align: left;
+            font-weight: 800;
+            font-size: 1em;
+            background-color: rgb(42, 42, 42);
+          }
+
+              div.C_icon_menu{
+                background-color: rgb(42, 42, 42);
+                width: 22vw;
+                height: 12vh;
+                left: 0;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                margin-right: 5vw;
+                border-bottom: 1px solid orange;
+              }
+
+
+            .C_icon_menu img{
+              width: 8vw;
+              height: auto;
+
+            }
+
+
+
+
+
+/* --Inicio Banner entrada ------------------------------------*/
+
+figure.c_banner{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    width: 100vw;
+}
+
+      img#marca{
+        position: absolute;
+        width: 75vw;
+        top: 5vh;
+      }
+      img.fundo_banner{
+              width: 100vw;
+              height: 100%;
+      }
+
+/* --Inicio nossa história--------------------------------------*/
+
+section#nossa_his{
+  margin-bottom: 4vh;
+}
+
+      img#tomate_f{
+        width: 100vw;
+        height: auto;
+      }
+
+      section h1.titulo_nh{
+        margin-bottom: 0.5em;
+        color: #ffad22;
+        font-size: 1.2em;
+        line-height: 1.7;
+        padding-left: 6vw;
+        padding-right: 6vw;
+        padding-top: 2vh;
+      }
+
+      section p.texto_nh{
+        color: grey;
+        font-size: 1em;
+        font-weight: 400;
+        line-height: 1.7;
+        padding-left: 6vw;
+        padding-right: 6vw;
+      }
+
+      section span.nome_ana{
+        color: rgb(170, 170, 170);
+        font-size: 0.87em;
+        font-weight: bolder;
+        padding-left: 6vw;
+        padding-right: 6vw;
+
+      }
+
+
+#botao_top {
+  display: none;
+  position: fixed;
+  bottom: 5vh;
+  right: 6vw;
+  z-index: 99;
+  width: 8vw;
+  background-color: inherit;
+  animation: ani_top 4s infinite;
+  color: grey
+}
+
+      @keyframes ani_top {
+        0% {opacity: 0.1;}
+        25% {opacity: 0.8;}
+        50% {opacity: 0.1;}
+        75% {opacity: 0.8;;}
+        100% {opacity: 0.1;}
+      }
+
+
+/* --Inicio por que la pezzi --------------------------------------*/
+figure#c_pq_lapezzi{
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+
+}
+
+      img#lasanha{
+        width: 100vw;
+        height: 100.5%;
+      }
+
+      h1.pq_lapezzi{
+        position: absolute;
+        bottom: -0.1em;
+        display: flex;
+        padding-top: 0.1em;
+        padding-right: 0.4em;
+        padding-left: 0.4em;
+        text-align: center;
+
+        color:#31b587;
+        background-color: white;
+        font-family: painter,cursive;
+        font-size: 5vmax;
+        font-weight: normal;
+      }
+
+h2.saibamais{
+  padding-top: 0.05em;
+  padding-bottom: 0.2em;
+  text-align: center;
+  color:#666;
+  font-size: 2.5vmax;
+  font-weight: 800;
+}
+
+.c_grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-auto-rows: 27vmax;
+}
+
+
+.verde_p{
+  position: relative;
+  display:flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  background-color: #09895c;
+  height: 100%;
+}
+
+    .verde_p:hover p#t_grano{
+      opacity: 1;
+    }
+    p#t_grano{
+      background-color: white;
+      text-align: center;
+      padding: 3.3em 1em 1em 1em;
+      width: 100%;
+      height: 100%;
+      color: green;
+      opacity: 0;
+      font-size: 2.2vmax;
+      position: absolute;
+      display: flex;
+      transition: 0.5s;
+      user-select: none;
+    }
+
+    .verde_p img{
+      width: 8vmax;
+      padding-bottom: 0.3em;
+      margin-left: -0.5em;
+    }
+
+    .verde_p p{
+      color: #ffffff;
+      font-size: 3vmax;
+    }
+
+.amarelo_p{
+  position: relative;
+  display:flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  background-color: #f0a600;
+}
+
+.amarelo_p:hover p#t_prati{
+  opacity: 1;
+}
+    p#t_prati{
+      background-color: white;
+      text-align: center;
+      width: 100%;
+      height: 100%;
+      color: #f0a600;
+      opacity: 0;
+      font-size: 2.2vmax;
+      position: absolute;
+      padding: 2.7em 1em 1em 1em;
+      display: block;
+      transition: 0.5s;
+      user-select: none;
+    }
+
+    .amarelo_p img{
+      width: 12vmax;
+      padding-top: 0.4em;
+      padding-bottom: 0.3em;
+
+    }
+    .amarelo_p p{
+      color: #ffffff;
+      font-size: 3vmax;
+    }
+
+.amarelo_s{
+  position: relative;
+  display:flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  background-color: #f0a600;
+}
+
+.amarelo_s:hover p#t_ingre{
+  opacity: 1;
+}
+    p#t_ingre{
+      background-color: white;
+      text-align: center;
+      width: 100%;
+      height: 100%;
+      color: #f0a600;
+      opacity: 0;
+      font-size: 2.2vmax;
+      position: absolute;
+      padding: 2.6em 1em 1em 1em;
+      display: block;
+      transition: 0.5s;
+      user-select: none;
+    }
+    .amarelo_s img{
+      width: 12vmax;
+      margin-left: -0.5em;
+      padding-bottom: 0.3em;
+    }
+
+    .amarelo_s p{
+      color: white;
+      font-size: 3vmax;
+    }
+
+
+.verde_s{
+  position: relative;
+  display:flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  background-color: #09895c;
+}
+
+.verde_s:hover p#t_conser{
+  opacity: 1;
+}
+    p#t_conser{
+      background-color: white;
+      text-align: center;
+      width: 100%;
+      height: 100%;
+      color: green;
+      opacity: 0;
+      font-size: 2.2vmax;
+      position: absolute;
+      padding: 2.7em 1em 1em 1em;
+      display: block;
+      transition: 0.5s;
+      user-select: none;
+    }
+
+    .verde_s img{
+      width: 10vmax;
+      padding-top: 0.4em;
+      padding-bottom: 0.3em;
+    }
+
+    .verde_s p{
+      color: #ffffff;
+      font-size: 3vmax;
+      wehwdh: 20px;
+    }
+
+/* --Inicio fotos--------------------------------------*/
+
+div.barra_fotos{
+  position: relative;
+  background-color: #ffffff;
+  width: 100vw;
+  height: 18vh;
+  align-items:center;
+  display: flex;
+  flex-direction: row;
+  justify-content:center;
+}
+
+      .barra_fotos h2{
+        padding-left: 2vw;
+        font-family: painter,cursive;
+        color: #ffcc66;
+        font-size: 7vmax;
+        font-weight: 400;
+        display: flex;
+        padding-top: 1vh;
+      }
+
+      img.icone_cam{
+        display: flex;
+        width: 9vmax;
+        animation: ani_iconf 3s infinite;
+      }
+
+      @keyframes ani_iconf {
+        0% {transform: rotate(0deg);}
+        50% {transform: rotate(-50deg);}
+        70% {transform: rotate(360deg);}
+        100% {transform: rotate(0deg);}
+      }
+
+
+.swiper-container {
+    width: 100vw;
+    height: 84vh;
+}
+
+.swiper-slide img{
+  width: 100vw;
+  height: 100.5%;
+}
+
+/* --Inicio link para menu--------------------------------------*/
+
+.C_menupreco{
+  width: 100vw;
+  height: 100vh;
+  background-color: #ffffff;
+  align-items: center;
+  display:flex;
+  flex-direction: column;
+  justify-content: center;
+  position: relative;
+  z-index: 0;
+}
+
+    .C_menupreco img{
+      width: 45vw;
+      margin-top: -3vh;
+    }
+
+    .C_menupreco h1{
+      font-family: painter,cursive;
+      font-size: 1.6em;
+      color: orange;
+      font-weight: normal;
+      padding-top: 0.5vh;
+    }
+
+    .C_menupreco p{
+      font-size: 3vmax;
+      text-align: center;
+      color: #2a2a2a;
+      padding-top: 0.4vh;
+      padding-left: 12vw;
+      padding-right: 12vw;
+    }
+
+    .botao_linkCom {
+      display: flex;
+      justify-content: center;
+      font-size: 5vmax;
+      color: #ffffff;
+      font-weight: bold;
+      background-color: orange;
+      margin-top: 2vh;
+      padding: 3vh 5vw 3vh 6vw;
+      animation: ani_botao 5s infinite;
+      box-shadow: 0.9vh 1.8vw 0.9vmax rgba(147, 147, 147,0.5) ;
+      width:77vw;
+    }
+
+    @keyframes ani_botao {
+      0% {background-color: orange;}
+      25%{background-color: #09895c;}
+      50%{background-color:orange;}
+      75%{background-color:#09895c;}
+      100% {background-color: orange;}
+    }
+
+
+/* --Inicio video--------------------------------------*/
+
+div.barra_video{
+  position: relative;
+  background-color: #ffcc66;
+  width: 100vw;
+  height: 16vh;
+  align-items:center;
+  display: flex;
+  flex-direction: row;
+  justify-content:center;
+}
+
+          .barra_video h2{
+            padding-left: 5vw;
+            font-family: painter,cursive;
+            color: #009966;
+            font-size: 1.9em;
+            font-weight: normal;
+            display: flex;
+            padding-top: 1vh;
+          }
+
+          img.icone_tv{
+            display: flex;
+            width: 8vmax;
+            animation: ani_iconv 3s infinite;
+          }
+
+          @keyframes ani_iconv {
+            0% {transform: rotate(20deg);}
+            25% {transform: rotate(-20deg);}
+            50% {transform: rotate(20deg);}
+            75% {transform: rotate(-20deg);}
+            100% {transform: rotate(20deg);}
+          }
+
+video#C_video{
+  width: 100vw;
+}
+
+/* --Inicio Comentários --------------------------------------*/
+
+#C_comentarios{
+  height: 102vh;
+  width: 100vw;
+  background-color: #fff;
+}
+
+div.icone_conjunto{
+  display: flex;
+  height: 17vh;
+
+}
+
+    figure.coment_titulo{
+      margin-top: 5vh;
+    }
+            hr.esquerda{
+              border-bottom: 1px solid #ccc;
+              width: 28vw;
+              height: 30px;
+              position: absolute;
+              left: 6vw;
+            }
+
+            figure img.icone_coment{
+              width: 20vw;
+              left: 40vw;
+              position: absolute;
+            }
+
+            hr.direita{
+              border-bottom: 1px solid #ccc;
+              width: 28vw;
+              height: 30px;
+              left: 65vw;
+              position: absolute;
+            }
+    h1.coment_chamada{
+      position: relative;
+      font-family: painter,cursive;
+      font-size: 1.6em;
+      font-weight: normal;
+      color: #adadad;
+      margin-left: 6vw;
+      margin-right: 6vw;
+      text-align: center;
+    }
+
+    h2.fanpage{
+      font-weight: normal;
+      font-size: 0.9em;
+      font-style: italic;
+      text-align: center;
+      color: #ccc;
+      margin-left: 6vw;
+      margin-right: 6vw;
+      margin-bottom: 1vh;
+    }
+
+    span.aspas{
+      color: #ff9900;
+    }
+
+    p.comentarios{
+      color: #006633;
+      margin-left: 6vw;
+      margin-right: 6vw;
+      font-weight: bold;
+      text-align: center;
+      font-size: 1em;
+      padding-top: 3vh;
+    }
+
+    p.ass_coment{
+      padding-top: 0.5vh;
+      text-align: center;
+      font-style: italic;
+      color: grey;
+      margin-left: 6vw;
+      margin-right: 6vw;
+      border-bottom: 1px solid #ccc;
+      padding-bottom: 3vh;
+    }
+
+/* --Inicio Comentários --------------------------------------*/
+div.header_cont {
+  width: 100vw;
+  height: 35vh;
+  background-color: #fff;
+  position: relative;
+  overflow-x: hidden;
+  z-index:-2;
+}
+    div.fundo_cont{
+      width: 110vw;
+      height: 70vh;
+      background-color: #006633;
+      transform: rotate(-3deg);
+      position: absolute;
+      top: 4vh;
+      left: -5vw;
+      z-index: 0;
+    }
+
+    div.fundo_cont2{
+      width: 110vw;
+      height: 70vh;
+      background-color: #ffcc66;
+      transform: rotate(-4deg);
+      position: absolute;
+      top: 3vh;
+      left: -3vw;
+      z-index: -1;
+      opacity: 1;
+    }
+
+    h1.titulo_cont{
+      color: #ff9900;
+      width: 100vw;
+      font-family: painter,cursive;
+      font-weight: normal;
+      font-size: 1.6em;
+      text-align: center;
+      padding-top: 7vh;
+      padding-left: 6vw;
+      padding-right: 6vw;
+      position: absolute;
+    }
+
+    p.paragrafo_cont{
+      color: #fff;
+      text-align: center;
+      padding-top: 13vh;
+      padding-left: 6vw;
+      padding-right: 6vw;
+      position: absolute;
+      line-height: 1.5;
+    }
+
+div.botoes_conta{
+  display: flex;
+  flex-direction: row;
+}
+    div.facebook_cont{
+      width: 50vw;
+      height: 29vh;
+      background-color: #ff9900;
+      align-items: center;
+      display: flex;
+      justify-content: center;
+      position: relative;
+    }
+        img.face_icon{
+          width: 13vw;
+        }
+        span.face{
+          background-color: #ff9900;
+          width: 40vw;
+          height: 4vh;
+          position: absolute;
+          text-align: center;
+          top: -2vh;
+          box-shadow: 0vh 1vw 1vmax rgb(88, 88, 88, 0.4);
+          font-weight: bolder;
+          color: rgb(33, 33, 33);
+        }
+
+    div.whatsapp_cont{
+      width: 50vw;
+      height: 29vh;
+      background-color: #33cc66;
+      align-items: center;
+      display: flex;
+      justify-content: center;
+      position: relative;
+    }
+        img.zap_icon{
+          width: 25vw;
+        }
+        span.zap{
+          background-color: #33cc66;
+          width: 40vw;
+          height: 4vh;
+          position: absolute;
+          text-align: center;
+          top: -2vh;
+          box-shadow: 0vh 1vw 1vmax rgb(88, 88, 88, 0.4);
+          font-weight: bolder;
+          color: rgb(33, 33, 33);
+        }
+
+/* --Inicio Footer --------------------------------------*/
+footer{
+  background-color: #111;
+  width: 100vw;
+  height: 54vh;
+}
+    footer p{
+      color: #fff;
+      font-weight: bold;
+      padding-left: 6vw;
+      padding-top: 1vh;
+    }
+    footer img{
+      width: 40vw;
+      height: auto;
+      padding-top: 4vh;
+      padding-left: 6vw;
+    }
+    footer ul li a{
+      color: #ff9900;
+      padding-left: 6vw;
+      padding-right: 6vw;
+      font-size: 0.9em;
+      line-height: 1.8em;
+    }
+    footer address{
+      background-color: #333;
+      color: #999;
+      padding-left: 6vw;
+      padding-right: 6vw;
+      text-align: center;
+      font-size: 0.8em;
+      height: 10vh;
+      width: 100vw;
+      justify-content: center;
+      align-items: center;
+      display: flex;
+      margin-top: 5vh;
+    }
