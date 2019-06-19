@@ -2,7 +2,7 @@
 /* --------------- RESET e Toda a pagina ---------------*/
 @font-face {
   font-family:'painter';
-  src: url(../_fonts/painter.ttf);
+  src: url(../fonts/painter.ttf);
 }
 
 * {
