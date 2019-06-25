@@ -34,59 +34,78 @@ nav div.c_Barra_menu_mobile{
   display: flex;
   flex-direction: row;
   justify-content:center;
+  position: fixed;
+  z-index: 10;
+      
 }
-nav div img.icone_m{
-  width: 1.8em;
-  display: flex;
-  margin-right: 3vw;
-  z-index: 1;
-}
-nav h1{
-  display: flex;
-  color:#09895c;
-  font-family: painter, Cursive;
-  font-size: 1.4em;
-  z-index: 1;
-  font-weight:normal;
-  background-color: inherit;
-}
+
+      nav div img.icone_m{
+        width: 1.8em;
+        display: flex;
+        margin-right: 3vw;
+       
+      }
+
+      nav h1{
+        display: flex;
+        color:#09895c;
+        font-family: painter, Cursive;
+        font-size: 1.4em;
+        
+        font-weight:normal;
+        background-color: inherit;
+      }
+
+
+
 ul#Menu_abre_fecha {
-  position: absolute;
-  z-index: 1;
-  display: none;
-  width: 100vw;
+position: fixed;                   
+width: 100vw;
+background-color:#111;          
+z-index: 9; 
+opacity: 0 ;
+top:-35rem;
 }
+
+
 ul#Menu_abre_fecha li a{
   width: 100vw;
-  height: 12vh;
+  height: 10vh;
   align-items: center;
   display: flex;
-  color: white;
+  color: #eee;
   text-align: left;
   font-weight: 800;
   font-size: 1em;
-  background-color: rgb(42, 42, 42);
+     
+  
 }
-div.C_icon_menu{
-  background-color: rgb(42, 42, 42);
-  color: inherit;
-  width: 22vw;
-  height: 12vh;
-  left: 0;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  margin-right: 5vw;
-  border-bottom: 1px solid orange;
-}
-.C_icon_menu img{
-  width: 8vw;
-  height: auto;
-}
+
+    div.C_icon_menu{
+      
+      width: 18vw;
+      height: 10vh;
+      left: 0;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin-right: 1vw;
+      /*border-bottom: 1px solid orange; */
+    }
+
+
+  .C_icon_menu img{
+    width: 5vw;
+    height: auto;
+
+  }
+
+
 
 /* --Inicio sessão como pedir -----------------------------------------------*/
 
 img.banner{
+  padding-top:8.4vh;
   width: 100vw;
   height:100%;
   position: relative;
