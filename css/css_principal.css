@@ -40,14 +40,14 @@ nav div.c_Barra_menu_mobile{
     justify-content:center;
     position: fixed;
     z-index: 80;
-        
+
 }
 
         nav div img.icone_m{
           width: 1.8em;
           display: flex;
           margin-right: 3vw;
-         
+
         }
 
         nav h1{
@@ -55,7 +55,7 @@ nav div.c_Barra_menu_mobile{
           color:#09895c;
           font-family: painter, Cursive;
           font-size: 1.4em;
-          
+
           font-weight:normal;
           background-color: inherit;
         }
@@ -63,12 +63,12 @@ nav div.c_Barra_menu_mobile{
 
 
 ul#Menu_abre_fecha {
-  position: fixed;                   
+  position: fixed;
   width: 100vw;
-  background-color:#111;          
-  z-index: 79; 
+  background-color:#111;
+  z-index: 79;
   opacity: 0 ;
-  top:-35rem;
+  top:-24rem;
 }
 
 
@@ -81,12 +81,12 @@ ul#Menu_abre_fecha {
     text-align: left;
     font-weight: 800;
     font-size: 1em;
-       
-    
+
+
   }
 
       div.C_icon_menu{
-        
+
         width: 18vw;
         height: 10vh;
         left: 0;
@@ -101,6 +101,7 @@ ul#Menu_abre_fecha {
     .C_icon_menu img{
       width: 5vw;
       height: auto;
+
 
     }
 
@@ -135,18 +136,18 @@ section#nossa_his{
   margin-bottom: 4vh;
   height: auto;
   position: relative;
-  
+
 }
       a#ancora_nh{
         position: absolute;
         left: 0px;
-        top: -8.4vh;        
+        top: -8.4vh;
       }
 
       img#tomate_f{
         width: 100vw;
         height: auto;
-        
+
       }
 
       section h1.titulo_nh{
@@ -190,7 +191,7 @@ div#c_pq_lapezzi{
       a#ancora_pqla{
         position: absolute;
         left: 0px;
-        top: -8.4vh;               
+        top: -8.4vh;
       }
 
       img#lasanha{
@@ -399,7 +400,7 @@ div.barra_fotos{
       a#ancora_ft{
         position: absolute;
         left: 0px;
-        top: -8.4vh;               
+        top: -8.4vh;
       }
 
       .barra_fotos h2{
@@ -510,7 +511,7 @@ div.barra_video{
           a#ancora_vd{
             position: absolute;
             left: 0px;
-            top: -8.4vh;               
+            top: -8.4vh;
           }
           .barra_video h2{
             padding-left: 5vw;
@@ -553,7 +554,7 @@ video#C_video{
 a#ancora_cm{
   position: absolute;
   left: 0px;
-  top: -8.4vh;               
+  top: -8.4vh;
 }
 
 div.icone_conjunto{
@@ -645,7 +646,7 @@ div.header_cont {
 a#ancora_co{
   position: absolute;
   left: 0px;
-  top: -8.4vh;               
+  top: -8.4vh;
 }
 
     div.fundo_cont{
