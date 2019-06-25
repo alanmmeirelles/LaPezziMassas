@@ -28,6 +28,8 @@ ul {
 /* --------------- Inicio Mobile First ------------------------*/
 
 /* --Inicio Menu -----------------------------------------------*/
+
+
 nav div.c_Barra_menu_mobile{
     width: 100vw;
     height: 8.4vh;
@@ -36,13 +38,16 @@ nav div.c_Barra_menu_mobile{
     display: flex;
     flex-direction: row;
     justify-content:center;
+    position: fixed;
+    z-index: 80;
+        
 }
 
         nav div img.icone_m{
           width: 1.8em;
           display: flex;
           margin-right: 3vw;
-          z-index: 1;
+         
         }
 
         nav h1{
@@ -50,49 +55,54 @@ nav div.c_Barra_menu_mobile{
           color:#09895c;
           font-family: painter, Cursive;
           font-size: 1.4em;
-          z-index: 1;
+          
           font-weight:normal;
           background-color: inherit;
         }
 
-        ul#Menu_abre_fecha {
-          position: absolute;
-          z-index: 1;
-          display: none;
-          width: 100vw;
-          background-color:#ffffff;
-          }
-
-          ul#Menu_abre_fecha li a{
-            width: 100vw;
-            height: 12vh;
-            align-items: center;
-            display: flex;
-            color: white;
-            text-align: left;
-            font-weight: 800;
-            font-size: 1em;
-            background-color: rgb(42, 42, 42);
-          }
-
-              div.C_icon_menu{
-                background-color: rgb(42, 42, 42);
-                width: 22vw;
-                height: 12vh;
-                left: 0;
-                display: flex;
-                align-items: center;
-                justify-content: center;
-                margin-right: 5vw;
-                border-bottom: 1px solid orange;
-              }
 
 
-            .C_icon_menu img{
-              width: 8vw;
-              height: auto;
+ul#Menu_abre_fecha {
+  position: fixed;                   
+  width: 100vw;
+  background-color:#111;          
+  z-index: 79; 
+  opacity: 0 ;
+  top:-35rem;
+}
 
-            }
+
+  ul#Menu_abre_fecha li a{
+    width: 100vw;
+    height: 10vh;
+    align-items: center;
+    display: flex;
+    color: #eee;
+    text-align: left;
+    font-weight: 800;
+    font-size: 1em;
+       
+    
+  }
+
+      div.C_icon_menu{
+        
+        width: 18vw;
+        height: 10vh;
+        left: 0;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-right: 1vw;
+        /*border-bottom: 1px solid orange; */
+      }
+
+
+    .C_icon_menu img{
+      width: 5vw;
+      height: auto;
+
+    }
 
 
 
@@ -101,16 +111,18 @@ nav div.c_Barra_menu_mobile{
 /* --Inicio Banner entrada ------------------------------------*/
 
 figure.c_banner{
+    padding-top: 8.4vh;
     position: relative;
     display: flex;
     justify-content: center;
     width: 100vw;
+    z-index: -2;
 }
 
       img#marca{
         position: absolute;
         width: 75vw;
-        top: 5vh;
+        padding-top: 5vh;
       }
       img.fundo_banner{
               width: 100vw;
@@ -121,11 +133,20 @@ figure.c_banner{
 
 section#nossa_his{
   margin-bottom: 4vh;
+  height: auto;
+  position: relative;
+  
 }
+      a#ancora_nh{
+        position: absolute;
+        left: 0px;
+        top: -8.4vh;        
+      }
 
       img#tomate_f{
         width: 100vw;
         height: auto;
+        
       }
 
       section h1.titulo_nh{
@@ -157,35 +178,20 @@ section#nossa_his{
       }
 
 
-#botao_top {
-  display: none;
-  position: fixed;
-  bottom: 5vh;
-  right: 6vw;
-  z-index: 99;
-  width: 8vw;
-  background-color: inherit;
-  animation: ani_top 4s infinite;
-  color: grey
-}
-
-      @keyframes ani_top {
-        0% {opacity: 0.1;}
-        25% {opacity: 0.8;}
-        50% {opacity: 0.1;}
-        75% {opacity: 0.8;;}
-        100% {opacity: 0.1;}
-      }
-
-
 /* --Inicio por que la pezzi --------------------------------------*/
-figure#c_pq_lapezzi{
+
+div#c_pq_lapezzi{
   position: relative;
   display: flex;
   flex-direction: row;
   justify-content: center;
 
 }
+      a#ancora_pqla{
+        position: absolute;
+        left: 0px;
+        top: -8.4vh;               
+      }
 
       img#lasanha{
         width: 100vw;
@@ -390,6 +396,11 @@ div.barra_fotos{
   flex-direction: row;
   justify-content:center;
 }
+      a#ancora_ft{
+        position: absolute;
+        left: 0px;
+        top: -8.4vh;               
+      }
 
       .barra_fotos h2{
         padding-left: 2vw;
@@ -496,7 +507,11 @@ div.barra_video{
   flex-direction: row;
   justify-content:center;
 }
-
+          a#ancora_vd{
+            position: absolute;
+            left: 0px;
+            top: -8.4vh;               
+          }
           .barra_video h2{
             padding-left: 5vw;
             font-family: painter,cursive;
@@ -523,6 +538,7 @@ div.barra_video{
 
 video#C_video{
   width: 100vw;
+  height: 100%;
 }
 
 /* --Inicio Comentários --------------------------------------*/
@@ -531,6 +547,13 @@ video#C_video{
   height: 102vh;
   width: 100vw;
   background-color: #fff;
+  position: relative;
+}
+
+a#ancora_cm{
+  position: absolute;
+  left: 0px;
+  top: -8.4vh;               
 }
 
 div.icone_conjunto{
@@ -610,7 +633,7 @@ div.icone_conjunto{
       padding-bottom: 3vh;
     }
 
-/* --Inicio Comentários --------------------------------------*/
+/* --Inicio contatos --------------------------------------*/
 div.header_cont {
   width: 100vw;
   height: 35vh;
@@ -619,6 +642,12 @@ div.header_cont {
   overflow-x: hidden;
   z-index:-2;
 }
+a#ancora_co{
+  position: absolute;
+  left: 0px;
+  top: -8.4vh;               
+}
+
     div.fundo_cont{
       width: 110vw;
       height: 70vh;
