@@ -81,12 +81,9 @@ ul#Menu_abre_fecha {
     text-align: left;
     font-weight: 800;
     font-size: 1em;
-
-
   }
 
       div.C_icon_menu{
-
         width: 18vw;
         height: 10vh;
         left: 0;
@@ -101,7 +98,6 @@ ul#Menu_abre_fecha {
     .C_icon_menu img{
       width: 5vw;
       height: auto;
-
 
     }
 
