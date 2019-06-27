@@ -36,14 +36,14 @@ nav div.c_Barra_menu_mobile{
   justify-content:center;
   position: fixed;
   z-index: 10;
-      
+
 }
 
       nav div img.icone_m{
         width: 1.8em;
         display: flex;
         margin-right: 3vw;
-       
+
       }
 
       nav h1{
@@ -51,7 +51,7 @@ nav div.c_Barra_menu_mobile{
         color:#09895c;
         font-family: painter, Cursive;
         font-size: 1.4em;
-        
+
         font-weight:normal;
         background-color: inherit;
       }
@@ -59,10 +59,10 @@ nav div.c_Barra_menu_mobile{
 
 
 ul#Menu_abre_fecha {
-position: fixed;                   
+position: fixed;
 width: 100vw;
-background-color:#111;          
-z-index: 9; 
+background-color:#111;
+z-index: 9;
 opacity: 0 ;
 top:-35rem;
 }
@@ -77,12 +77,12 @@ ul#Menu_abre_fecha li a{
   text-align: left;
   font-weight: 800;
   font-size: 1em;
-     
-  
+
+
 }
 
     div.C_icon_menu{
-      
+
       width: 18vw;
       height: 10vh;
       left: 0;
@@ -161,7 +161,7 @@ div.como_pedir{
 h2.chamada_2{
   width: 14.44rem;
   color: #66CC99;
-  font: 800 1.65rem/2.375rem 'open sans', sans-serif ;
+  font: 800 1.618rem/2.375rem 'open sans', sans-serif ;
   background-color: inherit;
 }
 img.icone_click{
@@ -171,7 +171,7 @@ img.icone_click{
   padding: 0.8rem 0 0 0.3rem;
 }
 ol.passo_a_p{
-  margin: 1.2rem 1.875rem 3rem 3rem ;
+  margin: 1rem 1.875rem 3rem 3rem ;
 
   font: 400 1rem/1.75rem 'open sans', sans-serif ;
   color: #999;

@@ -11,6 +11,7 @@
       <link rel="icon" href="imagens/favicon.ico">
       <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,800" rel="stylesheet">
       <link rel="stylesheet" href="css/swiper.min.css">
+      <link rel="stylesheet" href="css/lightbox.css">
 
       <title>La Pezzi | Massas e Molhos Congelados por Encomenda</title>
   </head>
@@ -123,22 +124,35 @@
             <h2>Fotos</h2>
         </div>
 
+
         <div class="swiper-container" role="slider">
+          <div class="swiper-pagination"></div>
             <div class="swiper-wrapper" role="img" title="Galeria de imagens">
+
                 <div class="swiper-slide">
-                    <img src="imagens/galeria_1.jpg" alt="Massa de gnhoche cortada e crua com farinha">
+                  <a href="imagens/canelone1.jpg" data-lightbox="mygallery">
+                    <img src="imagens/canelone1.jpg" alt="Massa de gnhoche cortada e crua com farinha">
+                  </a>
                 </div>
                 <div class="swiper-slide">
-                    <img src="imagens/galeria_2.jpg" alt="Tortelli de abobora cortado no meio">
+                  <a href="imagens/nhoque.jpg" data-lightbox="mygallery">
+                    <img src="imagens/nhoque.jpg" alt="Tortelli de abobora cortado no meio">
+                  </a>
                 </div>
                 <div class="swiper-slide">
-                    <img src="imagens/galeria_3.jpg" alt="Gnoche no prato pronto e suculento, com molho ao tomate ">
+                  <a href="imagens/canelone2.jpg" data-lightbox="mygallery">
+                    <img src="imagens/canelone2.jpg" alt="Gnoche no prato pronto e suculento, com molho ao tomate ">
+                  </a>
                 </div>
                 <div class="swiper-slide">
-                    <img src="imagens/galeria_4.jpg" alt="Molho de tomate em um pote, com belos tomates ao fundo">
+                  <a href="imagens/nhoque2.jpg" data-lightbox="mygallery">
+                    <img src="imagens/nhoque2.jpg" alt="Molho de tomate em um pote, com belos tomates ao fundo">
+                  </a>
                 </div>
+
             </div>
         </div>
+
     </section>
 
 <!--Inicio link para menu ------------>
@@ -239,11 +253,24 @@
 <!--Inicio Scripts  ------------>
     <script src="javascript/f_basicas.js"></script>
     <script src="javascript/swiper.min.js"></script>
+    <script src="javascript/lightbox-plus-jquery.min.js"></script>
+
     <script>
-    var mySwiper = new Swiper('.swiper-container', {
-      direction: 'horizontal',
-      loop: true,
-    });
+
+      lightbox.option({
+        'disableScrolling': true,
+        'positionFromTop':170,
+        'showImageNumberLabel':false,
+        'alwaysShowNavOnTouchDevices': true,
+      })
+
+      var mySwiper = new Swiper('.swiper-container', {
+        direction: 'horizontal',
+        pagination: {
+          el: '.swiper-pagination',
+        },
+      });
+
     </script>
 
 </body>
