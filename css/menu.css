@@ -167,12 +167,10 @@ h2.chamada_2{
 img.icone_click{
   width: 4rem;
   height: 100%;
-
   padding: 0.8rem 0 0 0.3rem;
 }
 ol.passo_a_p{
   margin: 1rem 1.875rem 3rem 3rem ;
-
   font: 400 1rem/1.75rem 'open sans', sans-serif ;
   color: #999;
 }
@@ -181,11 +179,11 @@ ol.passo_a_p{
 img.foto_produto{
   width: 100vw;
   height: 100%;
+  margin-top: 1.7rem;
 }
 
-
-p.titulo_produ{
-  margin: 1rem 1.875rem 0rem 1.875rem;
+h1.titulo_produ{
+  margin: 1rem 1.875rem -0.9rem 1.875rem;
   font: 400 2.188rem 'painter', cursive;
   color: #66CC99;
 }
@@ -196,54 +194,71 @@ span.peso{
 
 
 div.sabores{
-  margin: 0rem 1.875rem 0.5rem 1.875rem;
+  margin: 0.5rem 1.875rem 0rem 1.875rem;
+  line-height: 1.5rem;
 }
-div.saboresflex{ /* SÓ VAI UTILIZAR AQUI NESSE PRODUTO*/
-  display: flex; /*ATENÇÃO quando for fazer com descrição, possivel PRbralma*/
+div.saboresflex{ /* SÓ VAI UTILIZAR NO THALHARIM*/
+  display: flex;
   flex-direction: row;
 }
-    p.sub_titu{
+    h2.sub_titu{
       font: 800 1rem/1.5rem 'open sans', sans-serif;
       color:#666;
     }
 
-    p.sub_colun{ /* SÓ VAI UTILIZAR AQUI NESSE PRODUTO*/
+    h2.sub_colun{ /* SÓ VAI UTILIZAR NO THALHARIM*/
       width: 9.75rem;
     }
 
 
-p.preço_prod{
-  color:#FF9900;
-  font: 800 1rem/1.5rem 'open sans', sans-serif;
-  margin: 0rem 1.875rem 0.7rem 1.875rem;
-  padding-bottom: 0.75rem;
-  border-bottom: 1px solid grey;
+p.descricao{
+  color:#999;
 }
+div.c_preco{
+  margin: 0.3rem 1.875rem 0 1.875rem;
+  padding-bottom: 0.75rem;
+
+}
+    p.preço_prod{
+      color:#FF9900;
+      font: 800 1rem/1.5rem 'open sans', sans-serif;
+
+    }
+
 span.semipronto{
   font: 800 1rem/1.5rem 'open sans', sans-serif;
   color:#ccc;
 }
 
-div.botoes{
+div.observacao{
+  margin-top: 0.5rem;
+  color: #ccc;
+}
+
+div#botoes{
   display: flex;
   flex-direction: row;
-  margin: 0 0 4.3rem 1.875rem;
+  position: fixed;
+  bottom: 0;
+  z-index: 100;
+  opacity: 1;
+
 }
 div.botao-face {
-  width: 9.063rem;
-  height: 2.5rem;
-  margin-right: 0.5rem;
+  width:50vw;
+  height: 2.8rem;
   background-color: #FF9900;
-  border-radius: 4rem;
   display: flex;
   justify-content: center;
   align-items: center;
-  box-shadow: 0.2rem 0.2rem 0.2rem lightgrey;
-}
-div.botao-zap{
-  background-color: #00CC66;
 
 }
+
+div.botao-zap{
+  background-color: #00CC66;
+}
+
+
 
 img.iconsb{
   width: 1.875rem;
@@ -260,6 +275,7 @@ footer{
   width: 100vw;
   height: 54vh;
   position: relative;
+  margin-top: 1.5rem;
 
 }
 footer p{

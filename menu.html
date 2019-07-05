@@ -20,12 +20,12 @@
   <body>
       <header class="cabecalho">
           <nav>
-              
+
             <div class="c_Barra_menu_mobile" role="group" onclick="func_menu()">
                 <img class="icone_m" src="imagens/icone_menu_clar.svg"  alt="Um icone que simboliza o menu, com 3 retangulos arredondados um em cima do outro e com espaço no meio.">
                 <h1>O que deseja?</h1>
             </div>
-             
+
 
             <ul id="Menu_abre_fecha" title="Opções do site">
                     <li onclick="func_menu()"><a href="index.html#ancora_nh"><div class="C_icon_menu"><img src="imagens/hlp_icon.svg" alt="Icone de Livro" ></div>História das Receitas</a></li>
@@ -57,23 +57,85 @@
 <!--Inicio produtos --------->
       <section class="C_produtos">
 
+          <div id="botoes" role="group">
+              <a href="https://www.facebook.com/lapezzimassas" target="_blank"><div class="botao-face "><img src="imagens/imagensmenu/icone_face.svg" alt="Icone do facebook" class="iconsb"></div></a>
+              <a href="https://wa.me/5521975278857?text="><div class="botao-zap botao-face"><img src="imagens/imagensmenu/icone_zap.svg" alt="Icone do whatsapp" class="iconsb"></div></a>
+          </div>
+
           <img src="imagens/imagensmenu/talharim.jpg" alt="" class="foto_produto">
-          <p class="titulo_produ">Thalharim <span class="peso">500gr</span></p>
+          <h1 class="titulo_produ">Thalharim <span class="peso">500gr</span></h1>
           <div class="sabores saboresflex" role="group">
               <div role="group">
-                  <p class="sub_titu sub_colun">Tradicional</p>
-                  <p class="sub_titu sub_colun">Espinafre</p>
+                  <h2 class="sub_titu sub_colun">Tradicional</h2>
+                  <h2 class="sub_titu sub_colun">Espinafre</h2>
               </div>
               <div role="group">
-                  <p class="sub_titu sub_colun">Açafrão</p>
-                  <p class="sub_titu sub_colun">Beterraba</p>
+                  <h2 class="sub_titu sub_colun">Açafrão</h2>
+                  <h2 class="sub_titu sub_colun">Beterraba</h2>
               </div>
           </div>
-          <p class="preço_prod">R$ 15,50 <span class="semipronto">(Semi-Pronto)</span></p>
-          <div class="botoes"role="group">
-              <div class="botao-face "><img src="imagens/imagensmenu/icone_face.svg" alt="Icone do facebook" class="iconsb"></div>
-              <div class="botao-zap botao-face"><img src="imagens/imagensmenu/icone_zap.svg" alt="Icone do whatsapp" class="iconsb"></div>
+          <div class="c_preco"><p class="preço_prod">R$ 15,50 <span class="semipronto">(Semi-Pronto)</span></p></div>
+
+
+          <img src="imagens/imagensmenu/ravioli.jpg" alt="" class="foto_produto">
+          <h1 class="titulo_produ">Raviolli <span class="peso">500gr</span></h1>
+          <div class="sabores " role="group">
+                <h2 class="sub_titu">Carne</h2>
+                <p class="descricao">(carne assada com repolho, parmesão e especiarias)</p>
+                <h2 class="sub_titu">Espinafre</h2>
+                <p class="descricao">(brócolis, alho poró e ricota)</p>
           </div>
+          <div class="c_preco" role="group" style="border-bottom: 1px solid #ccc;">
+                <p class="preço_prod">R$ 25,00 <span class="semipronto">(Pronto)</span></p>
+                <p class="preço_prod">R$ 28,00 <span class="semipronto">(Semi-Pronto)</span></p>
+          </div>
+          <div class="sabores " role="group">
+                <h2 class="sub_titu">Palmito</h2>
+                <p class="descricao">(palmito, ricota e cream cheese)</p>
+                <h2 class="sub_titu">Quatro Queijos</h2>
+                <p class="descricao">(muçarela, ricota, cream cheese e gorgonzola)</p>
+                <h2 class="sub_titu">Pera com Brie</h2>
+                <p class="descricao">(pera, queijo brie e especiarias)</p>
+          </div>
+          <div class="c_preco" role="group">
+                <p class="preço_prod">R$ 28,00 <span class="semipronto">(Pronto)</span></p>
+                <p class="preço_prod">R$ 32,00 <span class="semipronto">(Semi-Pronto)</span></p>
+          </div>
+
+
+          <img src="imagens/imagensmenu/torteli.jpg" alt=" Foto de torteli de abobora cortado ao meio" class="foto_produto">
+          <h1 class="titulo_produ">Torteli <span class="peso">500gr</span></h1>
+          <div class="sabores " role="group">
+                <h2 class="sub_titu">Brócolis</h2>
+                <p class="descricao">(brócolis, alho poró e ricota)</p>
+          </div>
+          <div class="c_preco" role="group">
+                <p class="preço_prod">R$ 25,00 <span class="semipronto">(Pronto)</span></p>
+                <p class="preço_prod">R$ 28,00 <span class="semipronto">(Semi-Pronto)</span></p>
+          </div>
+
+
+          <img src="imagens/imagensmenu/lasanha.jpg" alt="Foto de uma deliciosa Lasanha" class="foto_produto">
+          <h1 class="titulo_produ">Lasanha <span class="peso">600gr</span></h1>
+          <div class="sabores " role="group">
+                <h2 class="sub_titu">Queijo com Presunto *</h2>
+                <h2 class="sub_titu">Frango com Milho *</h2>
+                <h2 class="sub_titu">Vegetariana **</h2>
+                <p class="descricao">(beringela, abobrinha e cenoura)</p>
+                <h2 class="sub_titu">Bolonhesa </h2>
+                <h2 class="sub_titu">Quatro Queijos</h2>
+                <p class="descricao">(muçarela, ricota, cream cheese e gorgonzola).</p>
+                <div class="observacao">
+                    <p class="molho">* Molho de tomate c/ molho branco</p>
+                    <p class="molho">** Molho de tomate com molho branco OU pesto com molho branco</p>
+                </div>
+          </div>
+          <div class="c_preco" role="group">
+                <p class="preço_prod">R$ 25,00 <span class="semipronto">(Pronto)</span></p>
+          </div>
+
+
+
       </section>
 
 
@@ -114,13 +176,7 @@
 
 <!--Inicio Scripts  ------------>
     <script language="javascript" src="javascript/f_basicas.js"></script>
-    <script src="javascript/swiper.min.js"></script>
-    <script>
-        var mySwiper = new Swiper('.swiper-container', {
-          direction: 'horizontal',
-          loop: true,
-        });
-    </script>
+
 
 </body>
 </html>

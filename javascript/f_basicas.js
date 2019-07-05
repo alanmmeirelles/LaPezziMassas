@@ -23,19 +23,11 @@ function func_menu() {
 
 
 
-
-
-
-
-window.onscroll = function() {funcao_scroll()};
-function funcao_scroll() {
-  if (document.documentElement.scrollTop > 500) {
-    document.getElementById("botao_top").style.display = "block";
+function aparecerMenu() {
+  var menu = document.getElementById('botoes')
+  if (document.documentElement.scrollTop > 700) {
+    menu.style.opcity = "1";
   } else {
-    document.getElementById("botao_top").style.display = "none";
+    menu.style.display = "0";
   }
-}
-
-function para_topo() {
-  document.documentElement.scrollTop = 0;
 }
