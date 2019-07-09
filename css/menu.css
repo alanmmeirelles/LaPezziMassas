@@ -239,9 +239,9 @@ div#botoes{
   display: flex;
   flex-direction: row;
   position: fixed;
-  bottom: 0;
+  bottom: -3rem;
   z-index: 100;
-  opacity: 1;
+  opacity: 0;
 
 }
 div.botao-face {

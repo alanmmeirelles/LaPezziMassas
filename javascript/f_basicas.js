@@ -19,15 +19,23 @@ function func_menu() {
 }
 
 
-
-
-
-
-function aparecerMenu() {
-  var menu = document.getElementById('botoes')
-  if (document.documentElement.scrollTop > 700) {
-    menu.style.opcity = "1";
+window.onscroll = function() {
+  funcao_scroll()
+}
+function funcao_scroll() {
+  var botoes = document.getElementById("botoes")
+  function esconder(){
+    botoes.style.opacity = "0"
+    botoes.style.bottom = "-3rem"
+    botoes.style.transition = 'opacity 0.5s, bottom 0.5s'
+  }
+  if (document.documentElement.scrollTop > 830) {
+    botoes.style.opacity = "1"
+    botoes.style.bottom = "0rem"
+    botoes.style.transition = 'opacity 0.5s, bottom 0.5s'
   } else {
-    menu.style.display = "0";
+    esconder()
+  } if (document.documentElement.scrollTop > 2700) {
+    esconder()
   }
 }
