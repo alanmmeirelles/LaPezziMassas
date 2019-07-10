@@ -215,7 +215,7 @@ p.descricao{
   color:#999;
 }
 div.c_preco{
-  margin: 0.3rem 1.875rem 0 1.875rem;
+  margin: 0.3rem 1.875rem 0 0rem;
   padding-bottom: 0.75rem;
 
 }
@@ -258,15 +258,52 @@ div.botao-zap{
   background-color: #00CC66;
 }
 
-
-
 img.iconsb{
   width: 1.875rem;
   height: auto;
 }
 
+div.C_molhos{
+  position: relative;
+  margin-top: 3rem;
+}
+
+    img.f_molhos{
+      width: 100vw;
+      height:auto;
+    }
+
+    div.opcoes{
+      position: absolute;
+      margin-left: 1.875rem;
+      margin-top: -1.9rem;
+      width: 18.75rem;
 
 
+    }
+        h1.titulo_Molho{
+          font: 400 2.188rem 'painter', cursive;
+          color: #333;
+          background-color: #FF9933;
+          padding: 0.5rem 0 0 2.313rem;
+          height: 4rem;
+
+        }
+        div.sabores_molho{
+          background-color: #009966;
+          padding: 0.6rem 0 0 2.313rem;
+          height: 11rem;
+
+        }
+            h2.molho{
+              font: 800 1rem/1.5rem 'open sans', sans-serif;
+              color: #fff;
+            }
+
+            span.preco_molho{
+              font: 400 1rem/1.5rem 'open sans', sans-serif;
+              color: #FFCC99;
+            }
 
 /* --Inicio Footer --------------------------------------*/
 footer{
@@ -275,7 +312,7 @@ footer{
   width: 100vw;
   height: 54vh;
   position: relative;
-  margin-top: 1.5rem;
+  margin-top: -0.4rem;
 
 }
 footer p{

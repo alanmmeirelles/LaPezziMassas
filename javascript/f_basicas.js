@@ -35,7 +35,7 @@ function funcao_scroll() {
     botoes.style.transition = 'opacity 0.5s, bottom 0.5s'
   } else {
     esconder()
-  } if (document.documentElement.scrollTop > 2700) {
+  } if (document.documentElement.scrollTop > 5100) {
     esconder()
   }
 }
