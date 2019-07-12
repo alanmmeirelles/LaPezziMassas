@@ -22,8 +22,8 @@
   <body>
       <header class="cabecalho">
           <nav>
-              <div class="c_Barra_menu_mobile" role="link" onclick="func_menu()">
-                  <img class="icone_m" src="imagens/icone_menu_clar.svg" role="icone" alt="Um icone que simboliza o menu, com 3 retangulos arredondados um em cima do outro e com espaço no meio.">
+              <div class="c_Barra_menu_mobile" role="menubar" onclick="func_menu()">
+                  <img class="icone_m" src="imagens/icone_menu_clar.svg"  alt="Um icone que simboliza o menu, com 3 retangulos arredondados um em cima do outro e com espaço no meio.">
                   <h1>O que deseja?</h1>
               </div>
 
@@ -43,20 +43,15 @@
       </header>
 
 <!--Inicio do banner de entrada------------>
-      <figure class="c_banner" >
-              <img id="marca" src="imagens/marca_b.svg" alt="Marca com subtitulo, La Pezzi Massas e Molhos">
-              <picture title="banner Apresentação">
-                    <img  class="fundo_banner" src="imagens/fundo_prin.jpg" alt="Mesa preta vista de cima, metade de cima com o logo La Pezzi, metade de baixo com ingredientes para produção de massas/macarrão">
-              </picture>
-      </figure>
+      <div class="c_banner" role="group">
+          <img id="marca" src="imagens/marca_b.svg" alt="Marca com subtitulo, La Pezzi Massas e Molhos">
+          <img  class="fundo_banner" src="imagens/fundo_prin.jpg" alt="Mesa preta vista de cima, metade de cima com o logo La Pezzi, metade de baixo com ingredientes para produção de massas/macarrão">
+      </div>
 
 <!--Inicio sessão nossa história ------------>
     <section  id="nossa_his" title="História da La Pezzi">
           <a id="ancora_nh">&nbsp;</a>
-          <picture role="heading">
-              <img id="tomate_f" src="imagens/fundo_toma-01.png" alt="2 lindos tomates com folhas de manjericão na sua frente, posicionado na frente de um fundo verde agua">
-          </picture>
-
+          <img id="tomate_f" src="imagens/fundo_toma-01.png" alt="2 lindos tomates com folhas de manjericão na sua frente, posicionado na frente de um fundo verde agua">
           <h1 class="titulo_nh" title="Titulo do Texto">
              A La Pezzi foi criada através de grande influência italiana.
           </h1>
@@ -66,7 +61,7 @@
              Hoje, reunindo a tradição dos recheios à novos sabores, a La Pezzi é especializada em massas grano duro utilizando semolina e ovos. Os recheios são isentos de conservantes, assim como os molhos.<br/><br/>
              As massas La Pezzi unem sabor, produtos selecionados e paixão pela boa culinária.
           </p>
-          <span class="nome_ana" role="author">Ana Letícia - Chef La Pezzi</span>
+          <span class="nome_ana">Ana Letícia - Chef La Pezzi</span>
     </section>
 
 

@@ -29,7 +29,7 @@ function funcao_scroll() {
     botoes.style.bottom = "-3rem"
     botoes.style.transition = 'opacity 0.5s, bottom 0.5s'
   }
-  if (document.documentElement.scrollTop > 830) {
+  if (document.documentElement.scrollTop > 790) {
     botoes.style.opacity = "1"
     botoes.style.bottom = "0rem"
     botoes.style.transition = 'opacity 0.5s, bottom 0.5s'

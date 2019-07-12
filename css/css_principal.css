@@ -107,7 +107,7 @@ ul#Menu_abre_fecha {
 
 /* --Inicio Banner entrada ------------------------------------*/
 
-figure.c_banner{
+div.c_banner{
     padding-top: 8.4vh;
     position: relative;
     display: flex;
@@ -612,7 +612,7 @@ div.icone_conjunto{
       font-weight: bold;
       text-align: center;
       font-size: 1em;
-    
+
       padding-top: 3vh;
     }
 

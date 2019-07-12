@@ -170,7 +170,7 @@ img.icone_click{
   padding: 0.8rem 0 0 0.3rem;
 }
 ol.passo_a_p{
-  margin: 1rem 1.875rem 3rem 3rem ;
+  margin: 1rem 1.875rem 1rem 3rem ;
   font: 400 1rem/1.75rem 'open sans', sans-serif ;
   color: #999;
 }
@@ -217,13 +217,11 @@ p.descricao{
 div.c_preco{
   margin: 0.3rem 1.875rem 0 0rem;
   padding-bottom: 0.75rem;
-
 }
-    p.preço_prod{
-      color:#FF9900;
-      font: 800 1rem/1.5rem 'open sans', sans-serif;
-
-    }
+p.preco_prod{
+  color:#FF9900;
+  font: 800 1rem/1.5rem 'open sans', sans-serif;
+}
 
 span.semipronto{
   font: 800 1rem/1.5rem 'open sans', sans-serif;
