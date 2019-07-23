@@ -12,6 +12,7 @@
       <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,800" rel="stylesheet">
       <link rel="stylesheet" href="css/swiper.min.css">
       <link rel="stylesheet" href="css/lightbox.css">
+      <link rel="stylesheet" media="only screen and (min-width:768px)" href="css/tablet.css">
 
       <title>La Pezzi | Massas e Molhos Congelados por Encomenda</title>
   </head>
@@ -22,37 +23,32 @@
   <body>
       <header class="cabecalho">
           <nav>
-              <div class="c_Barra_menu_mobile" role="menubar" onclick="func_menu()">
+              <div class="c_Barra_menu_mobile" role="navigation" onclick="func_menu()">
                   <img class="icone_m" src="imagens/icone_menu_clar.svg"  alt="Um icone que simboliza o menu, com 3 retangulos arredondados um em cima do outro e com espaço no meio.">
                   <h1>O que deseja?</h1>
               </div>
-
-
               <ul id="Menu_abre_fecha" title="Opções do site">
-                  <li onclick="func_menu()"><a href="#ancora_nh"><div class="C_icon_menu"><img src="imagens/hlp_icon.svg" alt="Icone de Livro" ></div>História das Receitas</a></li>
-                  <li onclick="func_menu()"><a href="#ancora_pqla"><div class="C_icon_menu"><img src="imagens/pqla_icon.svg" alt="Icone de duas estrelas"></div>Por que a La Pezzi</a></li>
-                  <li onclick="func_menu()"><a href="#ancora_ft"><div class="C_icon_menu"><img src="imagens/ft_icon.svg" alt="Icone de maquina fotográfica"></div>Fotos</a></li>
-                  <li onclick="func_menu()"><a href="menu.html"><div class="C_icon_menu"><img src="imagens/mn_icon.svg" alt="Icone de dinheiro"></div>Menu com Preços</a></li>
-                  <li onclick="func_menu()"><a href="#ancora_vd"><div class="C_icon_menu"><img src="imagens/vd_icon.svg" alt="Icone de tv"></div>La Pezzi na TV</a></li>
-                  <li onclick="func_menu()"><a href="#ancora_cm"><div class="C_icon_menu"><img src="imagens/cm_icon.svg" alt="Icone de comentários"></div>Depoimento de Clientes</a></li>
-                  <li onclick="func_menu()"><a href="#ancora_co"><div class="C_icon_menu"><img src="imagens/cc_icon.svg" alt="Icone de carrinho de compras"></div>Como Pedir Seu Congelado</a></li>
+                  <li onclick="func_menu()"><a href="#ancora_nh"><div class="C_icon_menu"><img src="imagens/hlp_icon.svg" alt="Icone de Livro" ></div>Nossa História</a></li>
+                  <li onclick="func_menu()"><a href="#ancora_pqla"><div class="C_icon_menu"><img src="imagens/pqla_icon.svg" alt="Icone de duas estrelas"></div>Por que La Pezzi ?</a></li>
+                  <li onclick="func_menu()"><a href="#ancora_ft"><div class="C_icon_menu"><img src="imagens/ft_icon.svg" alt="Icone de maquina fotográfica"></div>Nossas Fotos</a></li>
+                  <li onclick="func_menu()"><a href="menu.html"><div class="C_icon_menu"><img src="imagens/mn_icon.svg" alt="Icone de dinheiro"></div>Cardápio e Preços</a></li>
+                  <li onclick="func_menu()"><a href="#ancora_vd"><div class="C_icon_menu"><img src="imagens/vd_icon.svg" alt="Icone de tv"></div>La Pezzi na TV !</a></li>
+                  <li onclick="func_menu()"><a href="#ancora_cm"><div class="C_icon_menu"><img src="imagens/cm_icon.svg" alt="Icone de comentários"></div>Depoimentos</a></li>
+                  <li onclick="func_menu()" class="coluna_exp7"><a href="#ancora_co"><div class="C_icon_menu "><img src="imagens/cc_icon.svg" alt="Icone de carrinho de compras"></div>Como Pedir seu Congelado?</a></li>
               </ul>
-
           </nav>
-
       </header>
 
 <!--Inicio do banner de entrada------------>
-      <div class="c_banner" role="group">
+      <div class="c_banner" role="banner">
           <img id="marca" src="imagens/marca_b.svg" alt="Marca com subtitulo, La Pezzi Massas e Molhos">
           <img  class="fundo_banner" src="imagens/fundo_prin.jpg" alt="Mesa preta vista de cima, metade de cima com o logo La Pezzi, metade de baixo com ingredientes para produção de massas/macarrão">
       </div>
-
 <!--Inicio sessão nossa história ------------>
     <section  id="nossa_his" title="História da La Pezzi">
           <a id="ancora_nh">&nbsp;</a>
           <img id="tomate_f" src="imagens/fundo_toma-01.png" alt="2 lindos tomates com folhas de manjericão na sua frente, posicionado na frente de um fundo verde agua">
-          <h1 class="titulo_nh" title="Titulo do Texto">
+          <h1 class="titulo_nh" >
              A La Pezzi foi criada através de grande influência italiana.
           </h1>
           <p class="texto_nh" >
@@ -63,49 +59,39 @@
           </p>
           <span class="nome_ana">Ana Letícia - Chef La Pezzi</span>
     </section>
-
-
-
 <!--Inicio por que la pezzi ------------>
       <section title="Por que La Pezzi?">
           <header title="Cabeçalho da sessão Por que La Pezzi">
               <div id="c_pq_lapezzi" role="heading">
                   <a id="ancora_pqla">&nbsp;</a>
-                  <picture  role="banner">
-                      <img  id="lasanha" src="imagens/lasanha_pq.jpg" alt="Um corte lindo de uma Lasanha em um prato branco">
-                  </picture>
+                  <img  id="lasanha" src="imagens/lasanha_pq.jpg" alt="Um corte lindo de uma Lasanha em um prato branco">
                   <h1 class="pq_lapezzi">Por Que La Pezzi ?</h1>
-                </div>
-              <h2 class="saibamais">Clique nos icones para saber mais</h2>
+              </div>
+              <h2 class="saibamais">Clique nos icones abaixo e saiba mais</h2>
           </header>
+          <div class="c_grid" role="grid">
+              <div class="verde" onclick="">
+                <p class="p_verde">As massas são feitas de trigo grano duro , este tipo de trigo é excelente para uma massa firme.</p>
+                <img src="imagens/trigo_icon.svg" style="height:11vh" alt=" Icone de um Trigo na cor branca">
+                <h2>Grano Duro</h2>
+              </div>
+              <div class="verde amarelo" onclick="">
+                <p class="p_verde p_amarelo">Feito para você que não tem tempo de cozinhar. Com embalagem prática, destampou, aqueceu, comeu!</p>
+                <img src="imagens/relogio_icon.svg" alt="Icone de um relógio na cor branca">
+                <h2>Prático</h2>
+              </div>
 
-            <div class="c_grid" role="grid">
-
-                <div class="verde_p" role="gridcell">
-                  <p id="t_grano">As massas são feitas de trigo grano duro , este tipo de trigo é excelente para uma massa firme.</p>
-                  <img src="imagens/trigo_icon.svg" alt=" Icone de um Trigo na cor branca">
-                  <p>Grano Duro</p>
-                </div>
-
-                <div class="amarelo_p" role="gridcell" >
-                  <p id="t_prati">Feito para você que não tem tempo de cozinhar. Com embalagem prática, destampou, aqueceu, comeu!</p>
-                  <img src="imagens/relogio_icon.svg" alt="Icone de um relógio na cor branca">
-                  <p>Prático</p>
-                </div>
-
-                <div class="amarelo_s" role="gridcell">
-                  <p id="t_ingre">Feito com ingredientes selecionados e frescos. Um exemplo de frescor, nosso manjericão é cultivado em casa!</p>
-                  <img src="imagens/ingredi_icon.svg" alt="Icone de duas folinhas na cor branca">
-                  <p>Ingredientes</p>
-                </div>
-
-                <div class="verde_s" role="gridcell">
-                  <p id="t_conser">Logo após ficarem prontos os produtos são congelados na hora, necessitando de 0% de conservantes.</p>
-                  <img src="imagens/conser_icon.svg" alt="Icone de um vidro de quimica cortado na diagonal na cor branca">
-                  <p>0% Conservantes</p>
-                </div>
-
-            </div>
+              <div class="verde amarelo" onclick="">
+                <p class="p_verde p_amarelo">Feito com ingredientes selecionados e frescos. Um exemplo de frescor, nosso manjericão é cultivado em casa!</p>
+                <img src="imagens/ingredi_icon.svg" alt="Icone de duas folinhas na cor branca">
+                <h2>Ingredientes</h2>
+              </div>
+              <div class="verde" onclick="">
+                <p  class="p_verde">Logo após ficarem prontos os produtos são congelados na hora, necessitando de 0% de conservantes.</p>
+                <img src="imagens/conser_icon.svg" alt="Icone de um vidro de quimica cortado na diagonal na cor branca">
+                <h2>0% Conservantes</h2>
+              </div>
+          </div>
       </section>
 
 <!--Inicio fOTOS f ------------>
@@ -113,17 +99,12 @@
     <section title="Galeria De Fotos">
         <div class="barra_fotos" id="fotos" role="heading">
             <a id="ancora_ft">&nbsp;</a>
-            <figure>
-              <img class="icone_cam"src="imagens/camera_icon.svg" alt="icone de uma câmera fotográfica.">
-            </figure>
-            <h2>Fotos</h2>
+            <img class="icone_cam" src="imagens/camera_icon.svg" alt="icone de uma câmera fotográfica.">
+            <h1>Fotos</h1>
         </div>
-
-
-        <div class="swiper-container" role="slider">
+        <div class="swiper-container" role="img">
           <div class="swiper-pagination"></div>
-            <div class="swiper-wrapper" role="img" title="Galeria de imagens">
-
+            <div class="swiper-wrapper" title="Galeria de imagens">
                 <div class="swiper-slide">
                   <a href="imagens/canelone1.jpg" data-lightbox="mygallery">
                     <img src="imagens/canelone1.jpg" alt="Massa de gnhoche cortada e crua com farinha">
@@ -144,21 +125,16 @@
                     <img src="imagens/nhoque2.jpg" alt="Molho de tomate em um pote, com belos tomates ao fundo">
                   </a>
                 </div>
-
             </div>
         </div>
-
     </section>
 
 <!--Inicio link para menu ------------>
     <section class="C_menupreco" id="L_menupreco" title="Veja nosso menu" >
-        <figure>
-          <img src="imagens/menu_preco.svg" alt="Um icone de um caderno de menu, coposto por uma campainha estilo hotel, e a palavra menu abaixo">
-        </figure>
+        <img src="imagens/menu_preco.svg" alt="Um icone de um caderno de menu, coposto por uma campainha estilo hotel, e a palavra menu abaixo">
         <h1>E ai, já ficou com vontade?!</h1>
         <p>Veja nosso cardápio, confira nossas deliciosas opções e faça sua encomenda agora mesmo! </p>
-        <a href="menu.html"><div class="botao_linkCom">Nosso Menu</div></a>
-
+        <a href="menu.html" role="button"><div class="botao_linkCom" >Nosso Menu</div></a>
     </section>
 
 
@@ -166,10 +142,8 @@
     <section title="La Pezzi na Tv (video)">
         <div class="barra_video" id="videos" role="heading">
             <a id="ancora_vd">&nbsp;</a>
-            <figure>
-              <img class="icone_tv"src="imagens/tv_icon.svg" alt="icone de uma tv com botão de play no meio, esta animada girando um pouco para esquerda e direita.">
-            </figure>
-            <h2>La Pezzi na TV!</h2>
+            <img class="icone_tv" src="imagens/tv_icon.svg" alt="icone de uma tv com botão de play no meio, esta animada girando um pouco para esquerda e direita.">
+            <h1>La Pezzi na TV!</h1>
         </div>
         <video id="C_video" controls="" poster="imagens/poster.jpg" title="Video da La Pezzi no Jornal Nacional">
             <source src="video/lapezzi.mp4" type="video/mp4">
@@ -180,11 +154,9 @@
     <section id="C_comentarios" title="Sessão de comentários dos clientes" >
         <a id="ancora_cm">&nbsp;</a>
         <div class="icone_conjunto" role="img">
-            <figure class="coment_titulo">
-              <hr class="esquerda">
-              <img class="icone_coment"src="imagens/coment_icon.svg" alt="Um balão de diálogo laranja com reticências no meio, fundo branco">
-              <hr class="direita">
-            </figure>
+              <hr class="esquerda ">
+              <img class="icone_coment" src="imagens/coment_icon.svg" alt="Um balão de diálogo laranja com reticências no meio, fundo branco">
+              <hr class="esquerda" style="left: 65vw">
         </div>
         <h1 class="coment_chamada">O que os clientes falam da  La Pezzi nas redes sociais?</h1>
         <h2 class="fanpage">(Comentários na nossa fanpage do facebook)</h2>
@@ -201,35 +173,33 @@
    <section id="C_contato" title="Área de contatos">
         <div class="header_cont" role="group">
             <a id="ancora_co">&nbsp;</a>
-            <div class="fundo_cont" role="form"></div>
-            <div class="fundo_cont2" role="form"></div>
+            <div class="fundo_verde" role="form"></div>
+            <div class="fundo_verde f_amarelo" role="form"></div>
             <h1 class="titulo_cont">E como pedir seu congelado?</h1>
             <p class="paragrafo_cont">Basta Clicar em uma das opções de contato abaixo ou entrar em contato com nosso telefone/whatsapp e nos contar o seu desejo ou tirar dúvidas</p>
         </div>
 
         <div class="botoes_conta" role="group">
-            <a href="https://www.facebook.com/lapezzimassas" target="_blank">
-                <div class="facebook_cont" role="button">
+            <a href="https://www.facebook.com/lapezzimassas" target="_blank" role="button">
+                <div class="facebook_cont" >
                     <span class="face">/LaPezziMassas</span>
-                    <img class="face_icon" src="imagens/face_icon.svg" alt="icone facebook em branco">
+                    <img class="face_icon" style="width: 13vw" src="imagens/face_icon.svg" alt="icone facebook em branco">
                 </div>
             </a>
-            <a href="https://wa.me/5521975278857?text=">
-                <div class="whatsapp_cont" role="button">
-                    <span class="zap">(21) 99973-1271</span>
-                    <img class="zap_icon" src="imagens/zap_icon.svg" alt="icone facebook em branco">
+            <a href="https://wa.me/5521975278857?text=" role="button">
+                <div class="facebook_cont whatsapp_cont" >
+                    <span class="face zap">(21) 99973-1271</span>
+                    <img class="zap_icon" style="width: 25vw" src="imagens/zap_icon.svg" alt="icone facebook em branco">
                 </div>
             </a>
         </div>
    </section>
-
 <!--Inicio footer  ------------>
-
 <footer>
      <img src="imagens/marca_negatraco.svg" alt="Marca La Pezzi em Branco">
-     <p>Você viu...</p>
+     <h1>Você viu...</h1>
      <ul id="volta_topo" title="Opções do site">
-         <li><a href="#ancora_nh" >História das Receitas</a></li>
+         <li><a href="#ancora_nh">Nossa História</a></li>
          <li><a href="#ancora_pqla">Por que a La Pezzi</a></li>
          <li><a href="#ancora_ft">Fotos</a></li>
          <li><a href="menu.html">Menu com Preços</a></li>
@@ -242,31 +212,23 @@
        &copy; Copyright 2019 - La Pezzi Massas Congeladas
      </address>
  </footer>
-
-
-
 <!--Inicio Scripts  ------------>
     <script src="javascript/f_basicas.js"></script>
     <script src="javascript/swiper.min.js"></script>
     <script src="javascript/lightbox-plus-jquery.min.js"></script>
-
     <script>
-
       lightbox.option({
         'disableScrolling': true,
         'positionFromTop':170,
         'showImageNumberLabel':false,
         'alwaysShowNavOnTouchDevices': true,
       })
-
       var mySwiper = new Swiper('.swiper-container', {
         direction: 'horizontal',
         pagination: {
           el: '.swiper-pagination',
         },
       });
-
     </script>
-
 </body>
 </html>

@@ -11,7 +11,7 @@ function func_menu() {
       }
       else {
         abrir.style.opacity = '1'
-        abrir.style.top = '3.2rem'
+        abrir.style.top = '3.1rem'
         abrir.style.transition = 'opacity 0.5s, top 1s'
         girar.style.transform = 'rotate(360deg)'
         girar.style.transition = 'transform 0.7s'

@@ -1,0 +1,6 @@
+TOtal linhas otimizado:495 (vai mudar)
+Linhas area critica otimizada: 42 linhas
+
+
+Total linhas old:664
+Linhas area critica old: 137 linhas
