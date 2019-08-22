@@ -8,6 +8,7 @@
       <meta name="author" content="Alan Martins Meirelles - Designer and Dev">
 
       <link rel="stylesheet" href="css/menu.css">
+      <link rel="stylesheet" media="only screen and (min-width:768px)" href="css/menu_tablet.css">
       <link rel="icon" href="imagens/favicon.ico">
       <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,800" rel="stylesheet">
       <link rel="stylesheet" href="_css/swiper.min.css">
@@ -28,12 +29,13 @@
 
 
             <ul id="Menu_abre_fecha" title="Opções do site">
-                    <li onclick="func_menu()"><a href="index.html#ancora_nh"><div class="C_icon_menu"><img src="imagens/hlp_icon.svg" alt="Icone de Livro" ></div>História das Receitas</a></li>
-                    <li onclick="func_menu()"><a href="index.html#ancora_pqla"><div class="C_icon_menu"><img src="imagens/pqla_icon.svg" alt="Icone de duas estrelas"></div>Por que a La Pezzi</a></li>
-                    <li onclick="func_menu()"><a href="index.html#ancora_ft"><div class="C_icon_menu"><img src="imagens/ft_icon.svg" alt="Icone de maquina fotográfica"></div>Fotos</a></li>
-                    <li onclick="func_menu()"><a href="index.html#ancora_vd"><div class="C_icon_menu"><img src="imagens/vd_icon.svg" alt="Icone de tv"></div>La Pezzi na TV</a></li>
-                    <li onclick="func_menu()"><a href="index.html#ancora_cm"><div class="C_icon_menu"><img src="imagens/cm_icon.svg" alt="Icone de comentários"></div>Depoimento de Clientes</a></li>
-                    <li onclick="func_menu()"><a href="index.html#ancora_co"><div class="C_icon_menu"><img src="imagens/cc_icon.svg" alt="Icone de carrinho de compras"></div>Como Pedir Seu Congelado</a></li>
+              <li onclick="func_menu()"><a href="index.html#ancora_nh"><div class="C_icon_menu"><img src="imagens/hlp_icon.svg" alt="Icone de Livro" ></div>Nossa História</a></li>
+              <li onclick="func_menu()"><a href="index.html#ancora_pqla"><div class="C_icon_menu"><img src="imagens/pqla_icon.svg" alt="Icone de duas estrelas"></div>Por que La Pezzi ?</a></li>
+              <li onclick="func_menu()"><a href="index.html#ancora_ft"><div class="C_icon_menu"><img src="imagens/ft_icon.svg" alt="Icone de maquina fotográfica"></div>Nossas Fotos</a></li>
+              <li onclick="func_menu()"><a href="#topo"><div class="C_icon_menu"><img src="imagens/mn_icon.svg" alt="Icone de dinheiro"></div>Cardápio e Preços</a></li>
+              <li onclick="func_menu()"><a href="index.html#ancora_vd"><div class="C_icon_menu"><img src="imagens/vd_icon.svg" alt="Icone de tv"></div>La Pezzi na TV !</a></li>
+              <li onclick="func_menu()"><a href="index.html#ancora_cm"><div class="C_icon_menu"><img src="imagens/cm_icon.svg" alt="Icone de comentários"></div>Depoimentos</a></li>
+              <li onclick="func_menu()" class="coluna_exp7"><a href="index.html#ancora_co"><div class="C_icon_menu "><img src="imagens/cc_icon.svg" alt="Icone de carrinho de compras"></div>Como Pedir seu Congelado?</a></li>
                 </ul>
           </nav>
       </header>
@@ -59,8 +61,9 @@
           <a href="https://www.facebook.com/lapezzimassas" target="_blank"><div class="botao-face "><img src="imagens/imagensmenu/icone_face.svg" alt="Icone do facebook" class="iconsb"></div></a>
           <a href="https://wa.me/5521975278857?text="><div class="botao-zap botao-face"><img src="imagens/imagensmenu/icone_zap.svg" alt="Icone do whatsapp" class="iconsb"></div></a>
       </div>
+
       <section class="C_produtos">
-        <div role="group">
+        <div role="group" class="thalharim">
           <img src="imagens/imagensmenu/talharim.jpg" alt="Massas cruas de Thalarim coloridas, de sabores variados, cores roxa, verde e amarelo." class="foto_produto">
           <h1 class="titulo_produ">Thalharim <span class="peso">500gr</span></h1>
           <div class="sabores saboresflex" role="group">
@@ -75,7 +78,7 @@
           </div>
           <div class="c_preco" style="margin-left: 1.875rem"><p class="preco_prod">R$ 15,50 <span class="semipronto">(Semi-Pronto)</span></p></div>
         </div>
-        <div role="group">
+        <div role="group" class="raviolli">
           <img src="imagens/imagensmenu/ravioli.jpg" alt="Alguns raviolis com delicioso molho de tomate em cima" class="foto_produto">
           <h1 class="titulo_produ">Raviolli <span class="peso">500gr</span></h1>
           <div class="sabores " role="group">
@@ -99,7 +102,7 @@
                 </div>
           </div>
         </div>
-        <div role="group">
+        <div role="group" class="torteli">
           <img src="imagens/imagensmenu/torteli.jpg" alt="Foto de torteli de abobora cortado ao meio" class="foto_produto">
           <h1 class="titulo_produ">Torteli <span class="peso">500gr</span></h1>
           <div class="sabores " role="group">
@@ -111,7 +114,7 @@
                 </div>
           </div>
         </div>
-        <div role="group">
+        <div role="group" class="lasanha">
           <img src="imagens/imagensmenu/lasanha.jpg" alt="Foto de uma deliciosa Lasanha" class="foto_produto">
           <h1 class="titulo_produ">Lasanha <span class="peso">600gr</span></h1>
           <div class="sabores " role="group">
@@ -131,7 +134,7 @@
                 </div>
           </div>
         </div>
-        <div role="group">
+        <div role="group" class="nhoque">
           <img src="imagens/imagensmenu/nhoque.jpg" alt="Um nhoque de batata doce com molho de tomate caseiro cobrindo, empratado em prato branco" class="foto_produto">
           <h1 class="titulo_produ">Nhoque <span class="peso">500gr</span></h1>
           <div class="sabores " role="group">
@@ -146,7 +149,7 @@
                 </div>
           </div>
         </div>
-        <div role="group">
+        <div role="group" class="rondeli">
           <img src="imagens/imagensmenu/rondeli.jpg" alt="2 rondelis de presunto com molho branco cortados, com um ramo de manjericão decorando" class="foto_produto">
           <h1 class="titulo_produ">Rondeli <span class="peso">600gr</span></h1>
           <div class="sabores " role="group">
@@ -162,10 +165,10 @@
                 </div>
           </div>
         </div>
-        <div role="group">
+        <div role="group" class="caneloni">
           <img src="imagens/imagensmenu/caneloni.jpg" alt="Alguns canelonis de sabor vegetariano, coberto com molho branco, e porção de tomate cereja decorando" class="foto_produto">
           <h1 class="titulo_produ">Caneloni <span class="peso">600gr</span></h1>
-          <div class="sabores " role="group">
+          <div class="sabores" role="group">
                 <h2 class="sub_titu">- Quatro Queijos </h2>
                 <p class="descricao">(muçarela, ricota, cream cheese e gorgonzola)</p>
                 <h2 class="sub_titu">- Queijo e Presunto</h2>
@@ -223,22 +226,23 @@
 
 <!--Inicio footer  ------------>
 
-  <footer>
-       <img src="imagens/marca_negatraco.svg" alt="Marca La Pezzi em Branco">
-       <p>Você viu...</p>
-       <ul id="volta_topo" title="Opções do site">
-            <li><a href="index.html#ancora_nh" >História das Receitas</a></li>
-            <li><a href="index.html#ancora_pqla">Por que a La Pezzi</a></li>
-            <li><a href="index.html#ancora_ft">Fotos</a></li>
-            <li><a href="index.html#ancora_vd">La Pezzi na TV</a></li>
-            <li><a href="index.html#ancora_cm">Depoimento de Clientes</a></li>
-            <li><a href="index.html#ancora_co">Área de contato e encomenda</a></li>
-       </ul>
-       <address class="C_adress">
-         Criado por Mei DeVigner / (21) 98881-2108 <br>
-         &copy; Copyright 2019 - La Pezzi Massas Congeladas
-       </address>
-   </footer>
+<footer>
+     <img src="imagens/marca_negatraco.svg" alt="Marca La Pezzi em Branco">
+     <h1>Você viu...</h1>
+     <ul id="volta_topo" title="Opções do site">
+         <li><a href="index.html#ancora_nh">Nossa História</a></li>
+         <li><a href="index.html#ancora_pqla">Por que a La Pezzi</a></li>
+         <li><a href="index.html#ancora_ft">Fotos</a></li>
+         <li><a href="#topo">Menu com Preços</a></li>
+         <li><a href="index.html#ancora_vd">La Pezzi na TV</a></li>
+         <li><a href="index.html#ancora_cm">Depoimento de Clientes</a></li>
+         <li><a href="index.html#ancora_co">Área de contato e encomenda</a></li>
+     </ul>
+     <address class="C_adress">
+       Criado por Mei DeVigner / (21) 98881-2108 <br>
+       &copy; Copyright 2019 - La Pezzi Massas Congeladas
+     </address>
+ </footer>
 
 
 

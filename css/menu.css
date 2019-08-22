@@ -36,14 +36,12 @@ nav div.c_Barra_menu_mobile{
   justify-content:center;
   position: fixed;
   z-index: 10;
-
 }
 
       nav div img.icone_m{
         width: 1.8em;
         display: flex;
         margin-right: 3vw;
-
       }
 
       nav h1{
@@ -51,7 +49,6 @@ nav div.c_Barra_menu_mobile{
         color:#09895c;
         font-family: painter, Cursive;
         font-size: 1.4em;
-
         font-weight:normal;
         background-color: inherit;
       }
@@ -67,7 +64,6 @@ opacity: 0 ;
 top:-35rem;
 }
 
-
 ul#Menu_abre_fecha li a{
   width: 100vw;
   height: 10vh;
@@ -77,12 +73,9 @@ ul#Menu_abre_fecha li a{
   text-align: left;
   font-weight: 800;
   font-size: 1em;
-
-
 }
 
     div.C_icon_menu{
-
       width: 18vw;
       height: 10vh;
       left: 0;
@@ -97,7 +90,6 @@ ul#Menu_abre_fecha li a{
   .C_icon_menu img{
     width: 5vw;
     height: auto;
-
   }
 
 
@@ -153,22 +145,26 @@ span{
   background-color: inherit;
   font: 1.30rem 'painter',cursive;
 }
+
+
 div.como_pedir{
   padding: 1rem 1.875rem 0 1.875rem ;
   display: flex;
   flex-direction: row;
 }
-h2.chamada_2{
-  width: 14.44rem;
-  color: #66CC99;
-  font: 800 1.618rem/2.375rem 'open sans', sans-serif ;
-  background-color: inherit;
-}
-img.icone_click{
-  width: 4rem;
-  height: 100%;
-  padding: 0.8rem 0 0 0.3rem;
-}
+    h2.chamada_2{
+      width: 14.44rem;
+      color: #66CC99;
+      font: 800 1.618rem/2.375rem 'open sans', sans-serif ;
+      background-color: inherit;
+    }
+    img.icone_click{
+      width: 4rem;
+      height: 100%;
+      padding: 0.8rem 0 0 0.3rem;
+    }
+
+
 ol.passo_a_p{
   margin: 1rem 1.875rem 1rem 3rem ;
   font: 400 1rem/1.75rem 'open sans', sans-serif ;
@@ -197,6 +193,8 @@ div.sabores{
   margin: 0.5rem 1.875rem 0rem 1.875rem;
   line-height: 1.5rem;
 }
+
+
 div.saboresflex{ /* SÓ VAI UTILIZAR NO THALHARIM*/
   display: flex;
   flex-direction: row;
@@ -233,6 +231,11 @@ div.observacao{
   color: #ccc;
 }
 
+
+
+
+
+
 div#botoes{
   display: flex;
   flex-direction: row;
@@ -260,6 +263,8 @@ img.iconsb{
   width: 1.875rem;
   height: auto;
 }
+
+
 
 div.C_molhos{
   position: relative;
@@ -306,41 +311,33 @@ div.C_molhos{
 /* --Inicio Footer --------------------------------------*/
 footer{
   background-color: #111;
-  color:inherit;
   width: 100vw;
-  height: 54vh;
-  position: relative;
-  margin-top: -0.4rem;
-
+  height: 55vh;
 }
-footer p{
-  color: #fff;
-  background-color: inherit;
-  font-weight: bold;
-  padding: 1vh 1.875rem 0 1.875rem ;
-}
-footer img{
-  width: 10rem;
-  height: auto;
-  padding: 1.4rem 1.875rem 0 1.875rem ;
-}
-footer ul li a{
-  color: #ff9900;
-  background-color: inherit;
-  padding: 0 1.875rem 0 1.875rem ;
-  font-size: 0.9em;
-  line-height: 1.8em;
-}
-footer address{
-  background-color: #333;
-  color: #999;
-  padding: 0 1.875rem 0 1.875rem ;
-  text-align: center;
-  font-size: 0.8em;
-  height: 10vh;
-  width: 100vw;
-  justify-content: center;
-  align-items: center;
-  display: flex;
-  margin-top: 5vh;
-}
+    footer h1{
+      color: #fff;
+      padding: 1rem 0rem 0rem 1.4rem;
+    }
+    footer img{
+      width: 40vw;
+      height: auto;
+      padding: 1.3rem 0rem 0rem 1.4rem;
+    }
+    footer ul li a{
+      color: #ff9900;
+      padding: 1.3rem 0rem 0rem 1.4rem;
+      font:  400 0.9rem/1.7rem 'open sans', sans-serif;
+    }
+    footer address{
+      background-color: #333;
+      color: #999;
+      margin-top: 1.5rem;
+      padding:  0rem 1.4rem 0rem 1.4rem;
+      text-align: center;
+      font-size: 0.8em;
+      height: 10vh;
+      width: 100vw;
+      justify-content: center;
+      align-items: center;
+      display: flex;
+    }
