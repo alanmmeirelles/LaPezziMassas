@@ -13,7 +13,7 @@
       <link rel="stylesheet" href="css/swiper.min.css">
       <link rel="stylesheet" href="css/lightbox.css">
       <link rel="stylesheet" media="only screen and (min-width:768px)" href="css/tablet.css">
-
+      <link rel="stylesheet" media="only screen and (min-width:1300px)" href="css/desktop.css">
 
       <title>La Pezzi | Massas e Molhos Congelados por Encomenda</title>
   </head>
@@ -23,12 +23,12 @@
 
   <body>
       <header class="cabecalho">
-          <nav>
+          <nav >
               <div class="c_Barra_menu_mobile" role="navigation" onclick="func_menu()">
                   <img class="icone_m" src="imagens/icone_menu_clar.svg"  alt="Um icone que simboliza o menu, com 3 retangulos arredondados um em cima do outro e com espaço no meio.">
                   <h1>O que deseja?</h1>
               </div>
-              <ul id="Menu_abre_fecha" title="Opções do site">
+              <ul id="Menu_abre_fecha">
                   <li onclick="func_menu()"><a href="#ancora_nh"><div class="C_icon_menu"><img src="imagens/hlp_icon.svg" alt="Icone de Livro" ></div>Nossa História</a></li>
                   <li onclick="func_menu()"><a href="#ancora_pqla"><div class="C_icon_menu"><img src="imagens/pqla_icon.svg" alt="Icone de duas estrelas"></div>Por que La Pezzi ?</a></li>
                   <li onclick="func_menu()"><a href="#ancora_ft"><div class="C_icon_menu"><img src="imagens/ft_icon.svg" alt="Icone de maquina fotográfica"></div>Nossas Fotos</a></li>
@@ -38,37 +38,68 @@
                   <li onclick="func_menu()" class="coluna_exp7"><a href="#ancora_co"><div class="C_icon_menu "><img src="imagens/cc_icon.svg" alt="Icone de carrinho de compras"></div>Como Pedir seu Congelado?</a></li>
               </ul>
           </nav>
+
+
+          <nav class="C_menudesktop"> <!--Inicio do menu para desktop ---------->
+                <ul id="menu_desktop" >
+                    <li><a href="#ancora_nh">Nossa História</a></li>
+                    <li><a href="#ancora_pqla">Por que La Pezzi</a></li>
+                    <li><a href="#ancora_ft">Nossas Fotos</a></li>
+                    <li><a href="menu.html">Cardápio e Preços</a></li>
+                    <li><a href="#ancora_vd">La Pezzi na TV</a></li>
+                    <li><a href="#ancora_cm">Depoimentos</a></li>
+                    <li><a href="#ancora_co" style="border-right:none;">Como Pedir seu Congelado</a></li>
+                </ul>
+          </nav>
+
+
+
       </header>
 
 <!--Inicio do banner de entrada------------>
       <div class="c_banner" role="banner">
-          <img id="marca" src="imagens/marca_b.svg" alt="Marca com subtitulo, La Pezzi Massas e Molhos">
+          <img id="marca" src="imagens/marca_b.svg"  alt="Marca com subtitulo, La Pezzi Massas e Molhos">
           <img  class="fundo_banner" src="imagens/fundo_prin.jpg" alt="Mesa preta vista de cima, metade de cima com o logo La Pezzi, metade de baixo com ingredientes para produção de massas/macarrão">
       </div>
+      <img class="fundo_desk" src="imagens/fundo_desk.jpg" alt="Mesa preta com farinha polvilhada, na parte de baixo ingredientes para fabricar massa fresca">
+
 <!--Inicio sessão nossa história ------------>
     <section  id="nossa_his" title="História da La Pezzi">
           <a id="ancora_nh">&nbsp;</a>
           <img id="tomate_f" src="imagens/fundo_toma-01.png" alt="2 lindos tomates com folhas de manjericão na sua frente, posicionado na frente de um fundo verde agua">
-          <h1 class="titulo_nh" >
-             A La Pezzi foi criada através de grande influência italiana.
-          </h1>
-          <p class="texto_nh" >
-             No início do século XX, meus bisavós imigraram para o Brasil e se estabeleceram na região da Serra Gaúcha.<br/><br/>
-             A influência da culinária italiana foi passada de geração em geração. Cresci vendo minha avó preparar verdadeiras delícias e aprendi com minha mãe a arte de preparar uma boa massa.<br/><br/>
-             Hoje, reunindo a tradição dos recheios à novos sabores, a La Pezzi é especializada em massas grano duro utilizando semolina e ovos. Os recheios são isentos de conservantes, assim como os molhos.<br/><br/>
-             As massas La Pezzi unem sabor, produtos selecionados e paixão pela boa culinária.
-          </p>
-          <span class="nome_ana">Ana Letícia - Chef La Pezzi</span>
+          <img id="tomate_desk" src="imagens/tomate_desk.png" alt="2 lindos tomates com folhas de manjericão na sua frente, posicionado na frente de um fundo verde agua">
+          <div class="C_texto">
+              <h1 class="titulo_nh" >
+                 A La Pezzi foi criada através de grande influência italiana.
+              </h1>
+              <section>
+                  <p class="texto_nh" >
+                     No início do século XX, meus bisavós imigraram para o Brasil e se estabeleceram na região da Serra Gaúcha.
+                  </p>
+                  <p class="texto_nh" >
+                     A influência da culinária italiana foi passada de geração em geração. Cresci vendo minha avó preparar verdadeiras delícias e aprendi com minha mãe a arte de preparar uma boa massa.
+                  </p>
+                  <p class="texto_nh" >
+                     Hoje, reunindo a tradição dos recheios à novos sabores, a La Pezzi é especializada em massas grano duro utilizando semolina e ovos. Os recheios são isentos de conservantes, assim como os molhos.
+                  </p>
+                  <p class="texto_nh" >
+                     As massas La Pezzi unem sabor, produtos selecionados e paixão pela boa culinária.<br>
+                     <span class="nome_ana">Ana Letícia - Chef La Pezzi</span>
+                  </p>
+              </section>
+          </div>
+
     </section>
 <!--Inicio por que la pezzi ------------>
-      <section title="Por que La Pezzi?">
-          <header title="Cabeçalho da sessão Por que La Pezzi">
+      <section class="S_pqlapezzi">
+          <header class="head_pq">
               <div id="c_pq_lapezzi" role="heading">
                   <a id="ancora_pqla">&nbsp;</a>
                   <img  id="lasanha" src="imagens/lasanha_pq.jpg" alt="Um corte lindo de uma Lasanha em um prato branco">
+                  <img  id="lasanha_desk" src="imagens/lasanha_desk.jpg" alt="Um corte lindo de uma Lasanha em um prato branco">
                   <h1 class="pq_lapezzi">Por Que La Pezzi ?</h1>
+                  <h2 class="saibamais">Clique nos icones abaixo e saiba mais</h2>
               </div>
-              <h2 class="saibamais">Clique nos icones abaixo e saiba mais</h2>
           </header>
           <div class="c_grid" role="grid">
               <div class="verde" onclick="">
@@ -97,12 +128,13 @@
 
 <!--Inicio fOTOS f ------------>
 
-    <section title="Galeria De Fotos">
+    <section class="fotos">
         <div class="barra_fotos" id="fotos" role="heading">
             <a id="ancora_ft">&nbsp;</a>
             <img class="icone_cam" src="imagens/camera_icon.svg" alt="icone de uma câmera fotográfica.">
             <h1>Fotos</h1>
         </div>
+
         <div class="swiper-container" role="img">
           <div class="swiper-pagination"></div>
             <div class="swiper-wrapper" title="Galeria de imagens">
@@ -135,12 +167,12 @@
         <img src="imagens/menu_preco.svg" alt="Um icone de um caderno de menu, coposto por uma campainha estilo hotel, e a palavra menu abaixo">
         <h1>E ai, já ficou com vontade?!</h1>
         <p>Veja nosso cardápio, confira nossas deliciosas opções e faça sua encomenda agora mesmo! </p>
-        <a href="menu.html" role="button"><div class="botao_linkCom" >Nosso Menu</div></a>
     </section>
+    <a href="menu.html" role="button"><div class="botao_linkCom" >Nosso Menu</div></a>
 
 
 <!--Inicio  para Videos ------------>
-    <section title="La Pezzi na Tv (video)">
+    <section class="S_video">
         <div class="barra_video" id="videos" role="heading">
             <a id="ancora_vd">&nbsp;</a>
             <img class="icone_tv" src="imagens/tv_icon.svg" alt="icone de uma tv com botão de play no meio, esta animada girando um pouco para esquerda e direita.">
@@ -152,7 +184,7 @@
     </section>
 <!--Inicio comentários  ------------>
 
-    <section id="C_comentarios" title="Sessão de comentários dos clientes" >
+    <section id="C_comentarios"  >
         <a id="ancora_cm">&nbsp;</a>
         <div class="icone_conjunto" role="img">
               <hr class="esquerda ">
@@ -171,13 +203,15 @@
 
 <!--Inicio Contato  ------------>
 
-   <section id="C_contato" title="Área de contatos">
+   <section id="C_contato" >
         <div class="header_cont" role="group">
             <a id="ancora_co">&nbsp;</a>
             <div class="fundo_verde" role="form"></div>
             <div class="fundo_verde f_amarelo" role="form"></div>
-            <h1 class="titulo_cont">E como pedir seu congelado?</h1>
-            <p class="paragrafo_cont">Basta Clicar em uma das opções de contato abaixo ou entrar em contato com nosso telefone/whatsapp e nos contar o seu desejo ou tirar dúvidas</p>
+            <div class="G_textcontato">
+              <h1 class="titulo_cont">E como pedir seu congelado?</h1>
+              <p class="paragrafo_cont">Basta Clicar em uma das opções de contato abaixo, ou entrar em contato com nosso telefone/whatsapp e nos contar o seu desejo ou tirar dúvidas</p>
+          </div>
         </div>
 
         <div class="botoes_conta" role="group">
@@ -190,24 +224,26 @@
             <a href="https://wa.me/5521975278857?text=" role="button">
                 <div class="facebook_cont whatsapp_cont" >
                     <span class="face zap">(21) 99973-1271</span>
-                    <img class="zap_icon"  src="imagens/zap_icon.svg" alt="icone facebook em branco">
+                    <img class="face_icon"  src="imagens/zap_icon.svg" alt="icone facebook em branco">
                 </div>
             </a>
         </div>
    </section>
 <!--Inicio footer  ------------>
 <footer>
-     <img src="imagens/marca_negatraco.svg" alt="Marca La Pezzi em Branco">
-     <h1>Você viu...</h1>
-     <ul id="volta_topo" title="Opções do site">
-         <li><a href="#ancora_nh">Nossa História</a></li>
-         <li><a href="#ancora_pqla">Por que a La Pezzi</a></li>
-         <li><a href="#ancora_ft">Fotos</a></li>
-         <li><a href="menu.html">Menu com Preços</a></li>
-         <li><a href="#ancora_vd">La Pezzi na TV</a></li>
-         <li><a href="#ancora_cm">Depoimento de Clientes</a></li>
-         <li><a href="#ancora_co">Área de contato e encomenda</a></li>
-     </ul>
+    <img src="imagens/marca_negatraco.svg" alt="Marca La Pezzi em Branco">
+    <div class="voceviu" role="group">
+         <h1>Você viu...</h1>
+         <ul id="volta_topo" title="Opções do site">
+             <li><a href="#ancora_nh">Nossa História</a></li>
+             <li><a href="#ancora_pqla">Por que a La Pezzi</a></li>
+             <li><a href="#ancora_ft">Nossas Fotos</a></li>
+             <li><a href="menu.html">Cardápio com Preços</a></li>
+             <li><a href="#ancora_vd">La Pezzi na TV</a></li>
+             <li><a href="#ancora_cm">Depoimentos</a></li>
+             <li><a href="#ancora_co">Como Pedir Seu congelado</a></li>
+         </ul>
+    </div>
      <address class="C_adress">
        Criado por Mei DeVigner / (21) 98881-2108 <br>
        &copy; Copyright 2019 - La Pezzi Massas Congeladas
@@ -220,9 +256,11 @@
     <script>
       lightbox.option({
         'disableScrolling': true,
-        'positionFromTop':170,
+        'positionFromTop':50,
         'showImageNumberLabel':false,
         'alwaysShowNavOnTouchDevices': true,
+        'fitImagesInViewport':true
+
       })
       var mySwiper = new Swiper('.swiper-container', {
         direction: 'horizontal',

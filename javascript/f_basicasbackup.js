@@ -21,16 +21,17 @@ function func_menu() {
 
 
 // inicio das funcoes dos botoes face/whatsapp
-
+var x = window.matchMedia("(min-width: 700px)")
+var y = window.matchMedia("(min-width: 1300px)") //x recebendo a regra mediaquery
 
 window.onscroll = function() {
-  if (window.matchMedia("(min-width: 1300px)").matches){
-    funcao_scrolldesk()
-  }
-  if (window.matchMedia("(max-width: 1299px)").matches) { // SE x(mediaquery) bater(matches), fazer funcao abaixo
+  if (x.matches) { // SE x(mediaquery) bater(matches), fazer funcao abaixo
     funcao_scrolltab()
   }
-  if (window.matchMedia("(max-width: 699px)").matches){
+  else if (y.matches){
+    funcao_scrolldesk()
+  }
+  else{
     funcao_scroll()
   }
 }
@@ -51,6 +52,7 @@ function funcao_scroll() { //funcao para celular
     botoes.style.opacity = "1"
     botoes.style.bottom = "0rem"
     botoes.style.transition = 'opacity 0.5s, bottom 0.5s'
+    document.body.style.backgroundColor = "pink"
   } else {
     esconder()
   } if (document.documentElement.scrollTop > 5100) {
@@ -63,7 +65,7 @@ function funcao_scrolltab() { //funcao para table
     botoes.style.opacity = "1"
     botoes.style.bottom = "0rem"
     botoes.style.transition = 'opacity 0.5s, bottom 0.5s'
-
+    document.body.style.backgroundColor = "green"
   } else {
     esconder()
   } if (document.documentElement.scrollTop > 3100) {
@@ -76,7 +78,7 @@ function funcao_scrolldesk() { //funcao para Desktop
     botoes.style.opacity = "1"
     botoes.style.bottom = "0rem"
     botoes.style.transition = 'opacity 0.5s, bottom 0.5s'
-
+    document.body.style.backgroundColor = "red"
   } else {
     esconder()
   } if (document.documentElement.scrollTop > 3700) {

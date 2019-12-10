@@ -134,10 +134,13 @@ div.barra_fotos{
 a#ancora_vd{
   top:-5vh;
 }
+.barra_video h1{
+  font: 400 5vmax 'painter', cursive;
+}
 /* --Inicio comentarios--------------------------------------*/
 #C_comentarios{
   height: auto;
-  margin-bottom: 6vw;
+  margin-bottom: 11vw;
 }
 a#ancora_cm{
   top: -8vh;

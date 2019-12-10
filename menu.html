@@ -8,7 +8,8 @@
       <meta name="author" content="Alan Martins Meirelles - Designer and Dev">
 
       <link rel="stylesheet" href="css/menu.css">
-      <link rel="stylesheet" media="only screen and (min-width:768px)" href="css/menu_tablet.css">
+      <link rel="stylesheet" media="only screen and (min-width:760px)" href="css/menu_tablet.css">
+      <link rel="stylesheet" media="only screen and (min-width:1300px)" href="css/menu_desktop.css">
       <link rel="icon" href="imagens/favicon.ico">
       <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,800" rel="stylesheet">
       <link rel="stylesheet" href="_css/swiper.min.css">
@@ -27,8 +28,7 @@
                 <h1>O que deseja?</h1>
             </div>
 
-
-            <ul id="Menu_abre_fecha" title="Opções do site">
+            <ul id="Menu_abre_fecha" title="Opções do site"><!--Inicio do menu para mobile ---------->
               <li onclick="func_menu()"><a href="index.html#ancora_nh"><div class="C_icon_menu"><img src="imagens/hlp_icon.svg" alt="Icone de Livro" ></div>Nossa História</a></li>
               <li onclick="func_menu()"><a href="index.html#ancora_pqla"><div class="C_icon_menu"><img src="imagens/pqla_icon.svg" alt="Icone de duas estrelas"></div>Por que La Pezzi ?</a></li>
               <li onclick="func_menu()"><a href="index.html#ancora_ft"><div class="C_icon_menu"><img src="imagens/ft_icon.svg" alt="Icone de maquina fotográfica"></div>Nossas Fotos</a></li>
@@ -38,10 +38,23 @@
               <li onclick="func_menu()" class="coluna_exp7"><a href="index.html#ancora_co"><div class="C_icon_menu "><img src="imagens/cc_icon.svg" alt="Icone de carrinho de compras"></div>Como Pedir seu Congelado?</a></li>
                 </ul>
           </nav>
+          <nav class="C_menudesktop"> <!--Inicio do menu para desktop ---------->
+                <ul id="menu_desktop" >
+                    <li><a href="index.html#ancora_nh">Nossa História</a></li>
+                    <li><a href="index.html#ancora_pqla">Por que La Pezzi</a></li>
+                    <li><a href="index.html#ancora_ft">Nossas Fotos</a></li>
+                    <li><a href="menu.html">Cardápio e Preços</a></li>
+                    <li><a href="index.html#ancora_vd">La Pezzi na TV</a></li>
+                    <li><a href="index.html#ancora_cm">Depoimentos</a></li>
+                    <li><a href="index.html#ancora_co" style="border-right:none;">Como Pedir seu Congelado</a></li>
+                </ul>
+          </nav>
+
       </header>
 <!--Inicio do como pedir e banner---------->
       <section id="topo">
           <img class="banner" src="imagens/imagensmenu/gnocchi.jpg" alt="foto de um delicioso nhoque">
+          <img class="banner_desk" src="imagens/imagensmenu/gnocchi_desk.jpg" alt="foto de um delicioso nhoque">
           <div class="grupo_cha" role="group">
               <div class="fundo_l"></div>
               <div class="fundo_c"></div>
@@ -204,40 +217,25 @@
                 </div>
             </div>
             <img src="imagens/imagensmenu/molhos.jpg" class="f_molhos" alt="">
+            <img src="imagens/imagensmenu/molhos_desk.jpg" class="f_molhos_desk" alt="">
         </div>
-
-
       </section>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 <!--Inicio footer  ------------>
 
 <footer>
-     <img src="imagens/marca_negatraco.svg" alt="Marca La Pezzi em Branco">
-     <h1>Você viu...</h1>
-     <ul id="volta_topo" title="Opções do site">
-         <li><a href="index.html#ancora_nh">Nossa História</a></li>
-         <li><a href="index.html#ancora_pqla">Por que a La Pezzi</a></li>
-         <li><a href="index.html#ancora_ft">Fotos</a></li>
-         <li><a href="#topo">Menu com Preços</a></li>
-         <li><a href="index.html#ancora_vd">La Pezzi na TV</a></li>
-         <li><a href="index.html#ancora_cm">Depoimento de Clientes</a></li>
-         <li><a href="index.html#ancora_co">Área de contato e encomenda</a></li>
-     </ul>
+    <img src="imagens/marca_negatraco.svg" alt="Marca La Pezzi em Branco">
+    <div class="voceviu" role="group">
+         <h1>Você viu...</h1>
+         <ul id="volta_topo" title="Opções do site">
+             <li><a href="index.html#ancora_nh">Nossa História</a></li>
+             <li><a href="index.html#ancora_pqla">Por que a La Pezzi</a></li>
+             <li><a href="index.html#ancora_ft">Nossas Fotos</a></li>
+             <li><a href="menu.html">Cardápio com Preços</a></li>
+             <li><a href="index.html#ancora_vd">La Pezzi na TV</a></li>
+             <li><a href="index.html#ancora_cm">Depoimentos</a></li>
+             <li><a href="index.html#ancora_co">Como Pedir Seu congelado</a></li>
+         </ul>
+    </div>
      <address class="C_adress">
        Criado por Mei DeVigner / (21) 98881-2108 <br>
        &copy; Copyright 2019 - La Pezzi Massas Congeladas

@@ -1,0 +1,207 @@
+@charset "UTF-8";
+/* --------------- RESET e Toda a pagina ---------------*/
+@font-face {
+  font-family:'painter';
+  src: url(../fonts/painter.ttf);
+}
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    border: none;
+    outline: none;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 16px;
+
+  }
+a{
+  text-decoration: none;
+}
+ul {
+  list-style: none;
+}
+body{
+  overflow-x: hidden;
+}
+/* --------------- Inicio desktop  ------------------------*/
+nav div.c_Barra_menu_mobile{
+  display: none;
+}
+nav.C_menudesktop{
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  position: fixed;
+  width: 100%;
+  height: 6vh;
+  background-color: rgba(0, 0, 0, 0.8);
+  z-index: 100;
+}
+ul#menu_desktop{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font: 800 1.2rem 'open-sans', sans-serif;
+  position: absolute;
+}
+ul#menu_desktop a{
+  color: white;
+  padding: 0 1vw 0 1vw;
+  border-right: 2px solid orange;
+  font-weight: 800;
+}
+ul#menu_desktop a:hover {
+  color: lightgreen;
+}
+/* --------------- Inicio desktop  ------------------------*/
+img.banner{
+  display: none;
+}
+img.banner_desk{
+  display:block;
+  width:100%;
+  height: auto;
+  top: 5.8vh;
+  position:relative;
+}
+div.grupo_cha{
+  width: 100%;
+  height: 30vmax;
+  top: 5.5vh;
+}
+div.fundo_l{
+  width: 105vw;
+  height: 30vmax;
+  top: -15vh;
+}
+div.fundo_c{
+  width: 110vw;
+  height: 25vmax;
+  top:-7vh;
+}
+h1.chamada{
+  padding: 0 ;
+  top: 11vh;
+  width:50%;
+  text-align: center;
+  position:relative;
+  margin:0 auto;
+  font: 400 2.8vmax/3.5vmax 'painter',cursive;
+}
+span{
+  font: 2.8vmax/3.5vmax 'painter',cursive;
+}
+
+/* --Inicio sessão como pedir -----------------------------------------------*/
+
+div.como_pedir{
+  padding: 0;
+    display: flex;
+    flex-direction: row;
+    position: relative;
+    margin: 0 auto;
+    width: 43%;
+}
+    h2.chamada_2{
+      width: auto;
+      font: 800 3vmax/4.5vmax 'open sans', sans-serif;
+    }
+    img.icone_click{
+      width: 9vmax;
+      padding-top: 3vh;
+      left: -5vw;
+      position: relative;
+    }
+ol.passo_a_p{
+  margin: 4vh auto;
+width: 39.7%;
+
+}
+/* --Inicio sessão como pedir -----------------------------------------------*/
+div#botoes{
+  margin: 0 0 5vh 26vw;
+}
+div.botao-face {
+  width:25vw;
+  border-radius: 10vmax;
+  margin-left: 1vw;
+}
+
+
+section.C_produtos{
+  width: 90%;
+  margin: 0 auto;
+  grid-template-rows: auto;
+  grid-template-columns: 32%;
+  grid-column-gap: 1.5vmax;
+  grid-template-areas:
+      "thalharim torteli nhoque"
+      "lasanha raviolli rondeli"
+      "caneloni molhos molhos"
+  ;
+}
+img.foto_produto {
+    margin-top: 10vh;
+}
+div.sabores{
+  width: auto;
+  margin: 0;
+  padding: 1vh 0 0 1.6vw;
+}
+div.C_molhos {
+    position: relative;
+    margin-top: 10vh;
+}
+div.opcoes {
+    position: relative;
+    width: 40%;
+    margin: 0 auto;
+}
+img.f_molhos_desk{
+  width: 100%;
+  height: auto;
+  top: -36vh;
+  position: relative;
+  z-index: -1;
+  display:block;
+}
+img.f_molhos{
+  display:none;
+}
+div.sabores_molho {
+    height: 29vh;
+}
+/* --Inicio footer------------------------------------*/
+footer{
+    margin-top: -4vh;
+}
+footer img{
+  position: relative;
+  left: 40%;
+  width: 15%;
+  padding-top: 5vh;
+  margin: 0;
+}
+
+.voceviu{
+  display: flex;
+  justify-content: center;
+  margin-top: 1vh;
+}
+    footer h1{
+     width: 6%;
+     text-align: right;
+     padding: 0;
+    }
+    footer ul{
+     width: 14%;
+    }
+    footer ul li a{
+      padding: 0;
+      font:  400 1vmax/1.7rem 'open sans', sans-serif;
+      margin-left: 1vw;
+    }
+    footer address{
+      height: 7vh;
+
+    }
