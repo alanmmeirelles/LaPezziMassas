@@ -1,0 +1,444 @@
+@charset "UTF-8";
+/* --------------- RESET e Toda a pagina ---------------*/
+@font-face {
+  font-family:'painter';
+  src: url(../fonts/painter.ttf);
+}
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    border: none;
+    outline: none;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 16px;
+
+  }
+a{
+  text-decoration: none;
+}
+ul {
+  list-style: none;
+}
+body{
+  overflow-x: hidden;
+}
+/* --------------- Inicio desktop  ------------------------*/
+nav div.c_Barra_menu_mobile{
+  display: none;
+}
+
+
+nav.C_menudesktop{
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  position: fixed;
+  width: 100%;
+  height: 6vh;
+  background-color: rgba(0, 0, 0, 0.8);
+  z-index: 100;
+}
+
+
+      ul#menu_desktop{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font: 800 1.2rem 'open-sans', sans-serif;
+        position: absolute;
+
+      }
+      ul#menu_desktop a{
+        color: white;
+        padding: 0 1vw 0 1vw;
+        border-right: 2px solid orange;
+      }
+
+      ul#menu_desktop a:hover {
+        color: lightgreen;
+      }
+
+
+
+/* --Inicio Banner entrada ------------------------------------*/
+div.c_banner{
+  padding: 0;
+  z-index: 2;
+  display: block;
+  width: auto;
+  left: 23vw;
+  top: 10vh;
+}
+    img#marca{
+      position: absolute;
+      width: 28vw;
+    }
+    img.fundo_banner{
+      display: none;
+    }
+    img.fundo_desk{
+      width: 100%;
+      height: auto;
+      z-index: -3;
+      display: block;
+    }
+
+/* --Inicio sessão nossa história ------------------------------------*/
+a#ancora_nh{
+  position: absolute;
+  left: 0px;
+  top: -5.9vh;
+}
+
+img#tomate_f{
+  display:none;
+}
+img#tomate_desk{
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+
+div.C_texto{
+  display: flex;
+  justify-content: center;
+}
+
+div h1.titulo_nh{
+  text-align: right;
+  width: 25vw;
+  padding: 0px;
+  font: 800 3vmax/4.5vmax 'open sans', sans-serif;
+  margin-left: 7vw;
+}
+section p.texto_nh{
+  width: 35vw;
+  padding-top: 0.9vh;
+  font: 400 1.3vmax/2.3vmax 'open sans', sans-serif;
+}
+/* --Inicio por que la pezzi ------------------------------------*/
+
+.S_pqlapezzi{
+  width: 100%;
+  height: 115vh;
+  margin-top: 25vh;
+}
+
+img#lasanha{
+  display: none;
+}
+
+img#lasanha_desk{
+  display: block;
+  width: 100%;
+}
+
+a#ancora_pqla{
+  position: absolute;
+  left: 0px;
+  top: -5.8vh;
+}
+
+header.head_pq{
+  position: relative;
+}
+
+      h1.pq_lapezzi{
+        width: 50vw;
+        height: 10vh;
+        bottom: 18vh;
+        font-size: 3vmax;
+      }
+      h2.saibamais{
+        position: absolute;
+        bottom: 13vh;
+        width: 50vw;
+        font: 800 1.2rem 'Open Sans', sans-serif;
+        animation: ani_text 2s infinite;
+        height: 5vh;
+        padding: 0;
+        justify-content: center;
+        align-items: center;
+        display: flex;
+
+      }
+      @keyframes ani_text {
+        0% {color: orange;}
+        50%{color: lightgreen;}
+        100%{color:orange;}
+      }
+
+.c_grid{
+  margin: 0 auto;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-auto-rows: 25vh;
+  width: 50vw;
+  position: relative;
+  top: -13vh;
+}
+.verde img{
+  width: 10vh;
+}
+
+/* --Inicio fOTOS f ------------------------------------*/
+a#ancora_ft{
+  position: absolute;
+  left: 0px;
+
+  top: -13vh;
+}
+.fotos{
+  height: 100vh;
+}
+    div.barra_fotos{
+      background-color: #009966;;
+      height: 47vh;
+      align-items:flex-start;
+      width: 40%;
+      margin: 0 auto;
+    }
+          img.icone_cam{
+            width: 4.5vmax;
+            padding-top: 2vh;
+            opacity: 0.9;
+          }
+          .barra_fotos h1{
+            font-size: 4vmax;
+            padding: 0px;
+            padding: 0.5vh 0 0 1.2vw;
+            color: #ffcc66;
+          }
+.swiper-container {
+    width: 40%;
+    height: auto;
+    position: relative;
+    top:-35vh;
+}
+.swiper-slide img{
+  width: 100%;
+height: auto;
+}
+
+/* --Inicio link para menu------------------------------------*/
+
+    .C_menupreco{
+      width: 40%;
+      height: 50vh;
+      display:flex;
+      flex-direction: row;
+      margin: 0 auto;
+    }
+        .C_menupreco img{
+          display: none;
+        }
+        .C_menupreco h1{
+          text-align: right;
+          font: 400 4vmax/5vmax 'painter', cursive;
+
+        }
+        .C_menupreco p{
+          text-align: left;
+          font: 400 1.3vmax/2vmax 'Open Sans', sans-serif;
+          margin-top: 16vh;
+          padding: 0 0 0 2vw;
+        }
+.botao_linkCom {
+  bottom: 10vh;
+  position: relative;
+  width:40vw;
+  padding: 0 ;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  padding: 1vmax 2vmax 1vmax 2vmax ;
+  margin-bottom: 40vh;
+  box-shadow: 0.5vw 1vh 0.5vmax rgba(147, 147, 147,0.8) ;
+}
+
+/* --Inicio video------------------------------------*/
+
+
+div.barra_video{
+  background-color: #009966;
+  height: 44vh;
+  align-items:flex-start;
+  width: 100%;
+  top: -10vh;
+}
+    a#ancora_vd{
+      position: absolute;
+      left: 0px;
+      top: -5.9vh;
+    }
+    img.icone_tv{
+      opacity: 0.5;
+      width: 4vmax;
+      padding-top: 3.5vh;
+    }
+    .barra_video h1{
+      font-size: 4vmax;
+      padding: 0px;
+      padding: 3vh 0 0 1.5vw;
+      color: #ffcc66;
+      font: 400 3vmax 'painter', cursive;
+
+    }
+video#C_video{
+  width: 50%;
+  height: 100%;
+  position: relative;
+  left: 25vw;
+  top: -40vh;
+}
+/* --Inicio comentários------------------------------------*/
+#C_comentarios{
+  width: 60%;
+  position: relative;
+  margin: 0 auto;
+  top: -20vh;
+}
+    a#ancora_cm{
+      position: absolute;
+      left: 0px;
+      top: -10vh;
+    }
+
+            img.icone_coment{
+              width: 10vmax;
+              height: auto;
+              margin: 0 ;
+            }
+            hr.esquerda{
+              border-bottom: 1px solid #ccc;
+              width: 20vw;
+              height: 5vh;
+            }
+
+    h1.coment_chamada{
+      margin: 0 auto;
+      width: 90%;
+      font: 400 3.5vmax/5vmax 'painter', cursive;
+      padding: 0 5vw 0 5vw;
+    }
+    h2.fanpage{
+      font: italic 400 1.6vmax 'open sans', sans-serif;
+      margin: 0 5vw 0vh 5vw;
+    }
+    span.aspas{
+      width: 70%;
+      font: 800 1.5vmax/2.6vmax 'open sans', sans-serif;
+    }
+
+    p.comentarios{
+      width: 70%;
+      margin: 0 auto;
+      margin-top: 4vh;
+      font: 800 1.5vmax/2.6vmax 'open sans', sans-serif;
+    }
+    p.ass_coment{
+      margin: 0 auto;
+      width: 70%;
+      padding: 1vh 0 5vh 0 ;
+    }
+
+/* --Inicio Contato------------------------------------*/
+div.header_cont {
+  width: 100%;
+  height: 75vh;
+  overflow-x: hidden;
+  overflow-y: hidden;
+}
+a#ancora_co{
+  position: absolute;
+  left: 0px;
+  top: -5.9vh;
+}
+div.fundo_verde{
+  width: 110%;
+  height: 70vh;
+  top: 11vh;
+}
+div.f_amarelo{
+  top: 8vh;
+  z-index: -1;
+}
+.G_textcontato{
+  display: flex;
+  width: 60%;
+  position: relative;
+  margin: 0 auto;
+  padding-bottom: 30vh;
+}
+      h1.titulo_cont{
+        width: 58%;
+        font: 400 5.2vmax/5vmax 'painter',cursive;
+        padding: 0;
+        top: 23vh;
+        position: relative;
+        text-align: right;
+      }
+      p.paragrafo_cont{
+        font: 400 1.5vmax/2.6vmax 'open sans', sans-serif;
+        padding: 16.5vmax 0vmax 0vmax 2vmax;
+        position: absolute;
+        line-height: 1.5;
+        position: relative;
+        text-align: left;
+        width: 64%;
+      }
+
+div.botoes_conta{
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  top: -16vh;
+  position: relative;
+}
+      div.facebook_cont{
+        width: 15vw;
+        height: 30vh;
+      }
+      span.face{
+        width: 13vw;
+        height: 5vh;
+        padding-top: 0.5vh;
+        box-shadow: 0vw 0.3vh 1vmax rgb(88, 88, 88, 0.7);
+      }
+      img.face_icon{
+        height: 15vh;
+        padding-top: 2vh;
+      }
+/* --Inicio Contato------------------------------------*/
+
+footer img{
+  position: relative;
+  left: 40%;
+  width: 15%;
+  padding-top: 5vh;
+  margin: 0;
+}
+
+.voceviu{
+  display: flex;
+  justify-content: center;
+  margin-top: 1vh;
+}
+    footer h1{
+     width: 6%;
+     text-align: right;
+     padding: 0;
+    }
+    footer ul{
+     width: 14%;
+    }
+    footer ul li a{
+      padding: 0;
+      font:  400 1vmax/1.7rem 'open sans', sans-serif;
+      margin-left: 1vw;
+    }
+    footer address{
+      height: 7vh;
+
+    }

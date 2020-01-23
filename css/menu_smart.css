@@ -1,0 +1,350 @@
+@charset "UTF-8";
+/* --------------- RESET e Toda a pagina ---------------*/
+@font-face {
+  font-family:'painter';
+  src: url(../fonts/painter.ttf);
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    border: none;
+    outline: none;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+
+  }
+a{
+  text-decoration: none;
+}
+ul {
+  list-style: none;
+}
+
+/* --------------- Inicio Mobile First ------------------------*/
+
+/* --Inicio do menu de  navegação -----------------------------------------------*/
+nav div.c_Barra_menu_mobile{
+  width: 100vw;
+  height: 8.4vh;
+  background-image: linear-gradient(-45deg,#f0ba3c,#ffe7b2,#fccf65);
+  align-items:center;
+  display: flex;
+  flex-direction: row;
+  justify-content:center;
+  position: fixed;
+  z-index: 10;
+}
+nav.C_menudesktop{
+  display: none;
+}
+
+      nav div img.icone_m{
+        width: 1.8em;
+        display: flex;
+        margin-right: 3vw;
+      }
+
+      nav h1{
+        display: flex;
+        color:#09895c;
+        font-family: painter, Cursive;
+        font-size: 1.4em;
+        font-weight:normal;
+        background-color: inherit;
+      }
+
+
+
+ul#Menu_abre_fecha {
+position: fixed;
+width: 100vw;
+background-color:#111;
+z-index: 9;
+opacity: 0 ;
+top:-35rem;
+}
+
+ul#Menu_abre_fecha li a{
+  width: 100vw;
+  height: 10vh;
+  align-items: center;
+  display: flex;
+  color: #eee;
+  text-align: left;
+  font-weight: 800;
+  font-size: 1em;
+}
+
+    div.C_icon_menu{
+      width: 18vw;
+      height: 10vh;
+      left: 0;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin-right: 1vw;
+      /*border-bottom: 1px solid orange; */
+    }
+
+
+  .C_icon_menu img{
+    width: 5vw;
+    height: auto;
+  }
+
+
+
+/* --Inicio sessão como pedir -----------------------------------------------*/
+
+img.banner{
+  padding-top:8.4vh;
+  width: 100vw;
+  height:100%;
+  position: relative;
+}
+img.banner_desk{
+  display: none;
+}
+div.grupo_cha{
+  position: relative;
+  overflow-x: hidden;
+  width: 100vw;
+  height: 15rem;
+  top: -1vh;
+}
+
+  div.fundo_l{
+    background-color:  #FF9900;
+    color: inherit;
+    width: 105vw;
+    height: 13.94rem;
+    position: absolute;
+    transform:rotate(-4deg);
+    z-index: -1;
+    top: -0.8vh;
+    left: -4vw;
+  }
+  div.fundo_c{
+    background-color: #222;
+    color: inherit;
+    width: 110vw;
+    height: 13.94rem;
+    position: absolute;
+    left: -3vw;
+    top:-2vh;
+    transform:rotate(-3deg);
+  }
+  h1.chamada{
+    padding: 0 1.875rem 0 1.875rem ;
+    position: absolute;
+    top: 6vh;
+    color: #fff;
+    background-color: inherit;
+    font: 400 1.30rem/2.063rem 'painter',cursive;
+}
+span{
+  color: #FF9900;
+  background-color: inherit;
+  font: 1.30rem 'painter',cursive;
+}
+
+
+div.como_pedir{
+  padding: 1rem 1.875rem 0 1.875rem ;
+  display: flex;
+  flex-direction: row;
+}
+    h2.chamada_2{
+      width: 14.44rem;
+      color: #66CC99;
+      font: 800 1.618rem/2.375rem 'open sans', sans-serif ;
+      background-color: inherit;
+    }
+    img.icone_click{
+      width: 4rem;
+      height: 100%;
+      padding: 0.8rem 0 0 0.3rem;
+    }
+
+
+ol.passo_a_p{
+  margin: 1rem 1.875rem 1rem 3rem ;
+  font: 400 1rem/1.75rem 'open sans', sans-serif ;
+  color: #999;
+}
+
+/* -w-Inicio sessão produtos -----------------------------------------------*/
+img.foto_produto{
+  width: 100vw;
+  height: 100%;
+  margin-top: 1.7rem;
+}
+
+h1.titulo_produ{
+  margin: 1rem 1.875rem -0.9rem 1.875rem;
+  font: 400 2.188rem 'painter', cursive;
+  color: #66CC99;
+}
+span.peso{
+  font: 400 1.563rem 'open sans', sans-serif;
+  color: #888A89;
+}
+
+
+div.sabores{
+  margin: 0.5rem 1.875rem 0rem 1.875rem;
+  line-height: 1.5rem;
+}
+
+
+div.saboresflex{ /* SÓ VAI UTILIZAR NO THALHARIM*/
+  display: flex;
+  flex-direction: row;
+}
+    h2.sub_titu{
+      font: 800 1rem/1.5rem 'open sans', sans-serif;
+      color:#666;
+    }
+
+    h2.sub_colun{ /* SÓ VAI UTILIZAR NO THALHARIM*/
+      width: 9.75rem;
+    }
+
+
+p.descricao{
+  color:#999;
+}
+div.c_preco{
+  margin: 0.3rem 1.875rem 0 0rem;
+  padding-bottom: 0.75rem;
+}
+p.preco_prod{
+  color:#FF9900;
+  font: 800 1rem/1.5rem 'open sans', sans-serif;
+}
+
+span.semipronto{
+  font: 800 1rem/1.5rem 'open sans', sans-serif;
+  color:#ccc;
+}
+
+div.observacao{
+  margin-top: 0.5rem;
+  color: #ccc;
+}
+
+
+
+
+
+
+div#botoes{
+  display: flex;
+  flex-direction: row;
+  position: fixed;
+  bottom: -3rem;
+  z-index: 100;
+  opacity: 0;
+}
+div.botao-face {
+  width:50vw;
+  height: 2.8rem;
+  background-color: #FF9900;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+}
+
+div.botao-zap{
+  background-color: #00CC66;
+}
+
+img.iconsb{
+  width: 1.875rem;
+  height: auto;
+}
+
+
+
+div.C_molhos{
+  position: relative;
+  margin-top: 3rem;
+}
+
+    img.f_molhos{
+      width: 100vw;
+      height:auto;
+    }
+    img.f_molhos_desk{
+
+      display:none;
+    }
+    div.opcoes{
+      position: absolute;
+      margin-left: 1.875rem;
+      margin-top: -1.9rem;
+      width: 18.75rem;
+
+
+    }
+        h1.titulo_Molho{
+          font: 400 2.188rem 'painter', cursive;
+          color: #333;
+          background-color: #FF9933;
+          padding: 0.5rem 0 0 2.313rem;
+          height: 4rem;
+
+        }
+        div.sabores_molho{
+          background-color: #009966;
+          padding: 0.6rem 0 0 2.313rem;
+          height: 11rem;
+
+        }
+            h2.molho{
+              font: 800 1rem/1.5rem 'open sans', sans-serif;
+              color: #fff;
+            }
+
+            span.preco_molho{
+              font: 400 1rem/1.5rem 'open sans', sans-serif;
+              color: #FFCC99;
+            }
+
+/* --Inicio Footer --------------------------------------*/
+footer{
+  background-color: #111;
+  width: 100vw;
+  height: 55vh;
+}
+    footer h1{
+      color: #fff;
+      padding: 1rem 0rem 0rem 1.4rem;
+    }
+    footer img{
+      width: 40vw;
+      height: auto;
+      padding: 1.3rem 0rem 0rem 1.4rem;
+    }
+    footer ul li a{
+      color: #ff9900;
+      padding: 1.3rem 0rem 0rem 1.4rem;
+      font:  400 0.9rem/1.7rem 'open sans', sans-serif;
+    }
+    footer address{
+      background-color: #333;
+      color: #999;
+      margin-top: 1.5rem;
+      padding:  0rem 1.4rem 0rem 1.4rem;
+      text-align: center;
+      font-size: 0.8em;
+      height: 10vh;
+      width: 100vw;
+      justify-content: center;
+      align-items: center;
+      display: flex;
+    }

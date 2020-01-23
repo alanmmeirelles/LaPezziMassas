@@ -124,7 +124,9 @@ div#botoes{
 div.botao-face {
   width:25vw;
   border-radius: 10vmax;
-  margin-left: 1vw;
+}
+div.botao-zap {
+    margin-left: 1vw;
 }
 
 
