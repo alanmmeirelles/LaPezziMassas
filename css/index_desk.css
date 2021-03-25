@@ -107,23 +107,19 @@ div.C_texto{
 
 div h1.titulo_nh{
   text-align: right;
-  width: 25vw;
+  width: 500px;
   padding: 0px;
-  font: 800 3vmax/4.5vmax 'open sans', sans-serif;
-  margin-left: 7vw;
+      font: 800 47px/65px 'open sans', sans-serif;
+  margin: 11px 0 0 17px;
 }
 section p.texto_nh{
-  width: 35vw;
-  padding-top: 0.9vh;
-  font: 400 1.3vmax/2.3vmax 'open sans', sans-serif;
+  width: 564px;
+padding-top: 20px;
+font: 400 18px 'open sans', sans-serif;
 }
 /* --Inicio por que la pezzi ------------------------------------*/
 
-.S_pqlapezzi{
-  width: 100%;
-  height: 115vh;
-  margin-top: 25vh;
-}
+
 
 img#lasanha{
   display: none;
@@ -145,10 +141,10 @@ header.head_pq{
 }
 
       h1.pq_lapezzi{
-        width: 50vw;
-        height: 10vh;
-        bottom: 18vh;
-        font-size: 3vmax;
+        width: 1022px;
+  height: 78px !important;
+  bottom: 175px;
+  font-size: 3.5rem;
       }
       h2.saibamais{
         position: absolute;
@@ -189,19 +185,19 @@ a#ancora_ft{
   top: -13vh;
 }
 .fotos{
-  height: 100vh;
+  height: 754px;
 }
     div.barra_fotos{
       background-color: #009966;;
-      height: 47vh;
+      height: 452px;
       align-items:flex-start;
-      width: 40%;
+      width: 100%;
       margin: 0 auto;
     }
           img.icone_cam{
-            width: 4.5vmax;
-            padding-top: 2vh;
-            opacity: 0.9;
+            width: 89px;
+            padding-top: 25px;
+
           }
           .barra_fotos h1{
             font-size: 4vmax;
@@ -243,18 +239,17 @@ height: auto;
           margin-top: 16vh;
           padding: 0 0 0 2vw;
         }
-.botao_linkCom {
-  bottom: 10vh;
-  position: relative;
-  width:40vw;
-  padding: 0 ;
-  justify-content: center;
-  align-items: center;
-  display: flex;
-  padding: 1vmax 2vmax 1vmax 2vmax ;
-  margin-bottom: 40vh;
-  box-shadow: 0.5vw 1vh 0.5vmax rgba(147, 147, 147,0.8) ;
-}
+        .botao_linkCom {
+            bottom: 78px;
+            position: relative;
+            width: 732px;
+            justify-content: center;
+            align-items: center;
+            display: flex;
+            padding: 20px;
+            margin-bottom: 200px;
+            box-shadow: 5px 7px 3px rgb(147 147 147 / 58%);
+        }
 
 /* --Inicio video------------------------------------*/
 
@@ -294,9 +289,8 @@ video#C_video{
 /* --Inicio comentários------------------------------------*/
 #C_comentarios{
   width: 60%;
-  position: relative;
-  margin: 0 auto;
-  top: -20vh;
+      position: relative;
+      margin: -350px auto 0 auto;
 }
     a#ancora_cm{
       position: absolute;
@@ -315,26 +309,26 @@ video#C_video{
               height: 5vh;
             }
 
-    h1.coment_chamada{
-      margin: 0 auto;
-      width: 90%;
-      font: 400 3.5vmax/5vmax 'painter', cursive;
-      padding: 0 5vw 0 5vw;
+    h1.coment_chamada {
+        margin: 0 auto;
+        width: 63%;
+        font: 400 56px/61px 'painter', cursive;
+        padding: 0 20px 0 20px;
     }
     h2.fanpage{
-      font: italic 400 1.6vmax 'open sans', sans-serif;
-      margin: 0 5vw 0vh 5vw;
+      font: italic 400 22px'open sans', sans-serif;
+      margin: 0 auto;
     }
     span.aspas{
       width: 70%;
-      font: 800 1.5vmax/2.6vmax 'open sans', sans-serif;
+      font-size:24px;
     }
 
-    p.comentarios{
-      width: 70%;
-      margin: 0 auto;
-      margin-top: 4vh;
-      font: 800 1.5vmax/2.6vmax 'open sans', sans-serif;
+    p.comentarios {
+        width: 66%;
+        margin: 36px auto 0 auto;
+        font: 800 18px 'open sans', sans-serif;
+        line-height: 30px;
     }
     p.ass_coment{
       margin: 0 auto;

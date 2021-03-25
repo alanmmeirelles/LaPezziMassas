@@ -55,6 +55,11 @@ ul#Menu_abre_fecha{
 div.c_banner{
   padding-top: 5vh;
 }
+img#marca {
+    position: absolute;
+    width: 500px;
+    padding-top: 106px;
+}
 /* --Inicio nossa história--------------------------------------*/
 a#ancora_nh{
   top:-5vh;
@@ -82,6 +87,8 @@ a#ancora_pqla{
 h1.pq_lapezzi{
   height: 7vh;
   font: 400 2.4rem 'painter', cursive;
+      height: 41px !important;
+      align-items: baseline;
 
 }
 #row_colorverde{
@@ -129,6 +136,7 @@ div.barra_fotos{
 .botao_linkCom {
   font: 800 3rem 'Open Sans', sans-serif;
   padding: 3vh 1vw 3vh 1vw ;
+  bottom: 154px;
 }
 /* --Inicio videos--------------------------------------*/
 a#ancora_vd{

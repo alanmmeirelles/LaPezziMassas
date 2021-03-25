@@ -113,9 +113,9 @@ div h1.titulo_nh{
   margin-left: 7vw;
 }
 section p.texto_nh{
-  width: 35vw;
-  padding-top: 0.9vh;
-  font: 400 1.3vmax/2.3vmax 'open sans', sans-serif;
+  width: 600px;
+  padding-top:18px;
+  font: 400 18px 'open sans', sans-serif;
 }
 /* --Inicio por que la pezzi ------------------------------------*/
 
